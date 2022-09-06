@@ -36,3 +36,17 @@ footer {
 .row-endfooter {
     text-align: center;
 }
+
+@media screen and (max-width:576px) {
+    .talk-with-us img {
+        width: 350px;
+    }
+
+    .footer-logo img {
+        width: 170px;
+    }
+
+    .footer-menu {
+        margin-top: 20px;
+    }
+}

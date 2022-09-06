@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css\style-admin.css" />
+    <title>Bora Bora Viagens</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <!-- Início da navbar -->
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"
+              ><img src="img/logo-bora-bora-small.png" alt=""
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="destinos.html">Destinos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="promocoes.html">Promoções</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contato.html">Contato</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="admin.html">Admin</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- Fim da navbar -->
+      </div>
+      <hr />
+    </header>
+    <main>
+      <div class="container">
+        <!-- Início do jumbotron -->
+        <div class="mt-4 p-5 bg-secondary text-white rounded">
+          <h1>Painel Administrador</h1>
+        </div>
+        <!-- Fim do jumbotron -->
+        <!-- Início do formulário de cadastro -->
+        <h1>Atualizar Promoção</h1>
+        <div class="d-flex justify-content-center mt-4">
+          <form action="" class="d-grid col-xl-6 col-lg-6 col-md-9 col-12">
+            <div class="input-group mb-3">
+              <span class="input-group-text bg-secondary text-light"
+                >Destino:</span
+              >
+              <input type="text" class="form-control" required />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text bg-secondary text-light"
+                >Ida:</span
+              >
+              <input type="date" class="form-control" required />
+              <span class="input-group-text bg-secondary text-light"
+                >Horário:</span
+              >
+              <input type="time" class="form-control" required />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text bg-secondary text-light"
+                >Volta:</span
+              >
+              <input type="date" class="form-control" required />
+              <span class="input-group-text bg-secondary text-light"
+                >Horário:</span
+              >
+              <input type="time" class="form-control" required />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text bg-secondary text-light"
+                >Cia Aérea:</span
+              >
+              <input type="text" class="form-control" required />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text bg-secondary text-light"
+                >Hotel:</span
+              >
+              <input type="text" class="form-control" required />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text bg-secondary text-light"
+                >Observações:</span
+              >
+              <textarea
+                cols=""
+                rows="10"
+                class="form-control"
+                required
+              ></textarea>
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text bg-secondary text-light"
+                >Valor:</span
+              >
+              <input type="number" class="form-control" required />
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text bg-secondary text-light"
+                  >Valor Promocional:</span
+                >
+                <input type="number" class="form-control" required />
+              </div>
+              <div class="d-grid gap-2 mb-3">
+              <button type="submit" class="btn btn-secondary btn-lg">
+                Salvar Atualizações
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="d-grid col-xl-6 col-lg-6 col-md-9 col-12 mb-3">
+            <a
+              class="btn btn-warning btn-lg"
+              href="crud-promocoes.html"
+              role="button"
+              >Voltar</a
+            >
+          </div>
+        </div>
+      <!-- Fim do formulário de cadastro -->
+      </div>
+    </main>
+    <footer>
+      <hr />
+      <div class="container">
+        <!-- Início do rodapé -->
+        <section class="row-footer mt-3">
+          <div class="footer-logo">
+            <img id="img-rodape" src="img/beach-image-small.png" alt="" />
+          </div>
+          <div class="footer-menu">
+            <ul type="none">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="destinos.html">Destinos</a></li>
+              <li><a href="promocoes.html">Promoções</a></li>
+              <li><a href="contato.html">Contato</a></li>
+              <li><a href="admin.html">Admin</a></li>
+            </ul>
+          </div>
+        </section>
+        <div class="row-endfooter">
+          <p>
+            Bora Bora Viagens -
+            <img
+              src="img/icons8-copyright-all-rights-reserved-20.png"
+              alt=""
+            />2022
+          </p>
+        </div>
+        <!-- Fim do rodapé -->
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

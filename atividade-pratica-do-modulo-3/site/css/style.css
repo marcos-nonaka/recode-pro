@@ -57,3 +57,14 @@
         height: 500px;
     }
 }
+
+@media screen and (max-width:576px) {
+    .footer-logo img {
+        width: 170px;
+
+    }
+    
+    .footer-menu {
+        margin-top: 20px;
+    }
+}
