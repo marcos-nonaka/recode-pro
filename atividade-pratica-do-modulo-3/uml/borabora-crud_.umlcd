@@ -1,0 +1,889 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_y5PTkCy8Ee2RXfJ-Z5pdBw">
+  <eAnnotations xmi:id="_G7XvsCy-Ee2RXfJ-Z5pdBw" source="http://ns.yatta.de/umllab">
+    <contents xsi:type="ecore:EAnnotation" xmi:id="_G7YWwCy-Ee2RXfJ-Z5pdBw" source="visual-filters/hideNonPublicElements">
+      <details xmi:id="_G7YWwSy-Ee2RXfJ-Z5pdBw" key="isActive" value="false"/>
+    </contents>
+  </eAnnotations>
+  <modelElement href="borabora-crud.uml#_raWgICy8Ee2RXfJ-Z5pdBw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_zn5wYCy8Ee2RXfJ-Z5pdBw" sourceAnchor="108.0,111.0" targetAnchor="38.0,61.0" target="_PNbh8Cy9Ee2RXfJ-Z5pdBw" source="_zoaGsCy8Ee2RXfJ-Z5pdBw">
+    <modelElement href="borabora-crud.uml#_yOcDECy8Ee2RXfJ-Z5pdBw"/>
+    <visualProperties xmi:id="_zsBbYCy8Ee2RXfJ-Z5pdBw" position="250.0,250.0"/>
+    <bendpoints xmi:id="_bWCSgCy9Ee2RXfJ-Z5pdBw" sourceY="348" targetX="-741" targetY="87"/>
+    <bendpoints xmi:id="_bWCSgSy9Ee2RXfJ-Z5pdBw" sourceX="741" sourceY="348" targetY="87"/>
+    <stereotypes xmi:id="_zoMEQCy8Ee2RXfJ-Z5pdBw" name="Reference">
+      <modelElement href="borabora-crud.uml#_yOlNACy8Ee2RXfJ-Z5pdBw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_zoF9oCy8Ee2RXfJ-Z5pdBw" text="">
+      <visualProperties xmi:id="_PleOgCy9Ee2RXfJ-Z5pdBw" position="-323.5,-8.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_zoJoACy8Ee2RXfJ-Z5pdBw" aggregationKind="NONE" name="">
+      <modelElement href="borabora-crud.uml#_yOcDESy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_PlbyQCy9Ee2RXfJ-Z5pdBw" position="5.5,5.5"/>
+      <visibility xmi:id="_zoPHkCy8Ee2RXfJ-Z5pdBw" label="+"/>
+      <cardinality xmi:id="_zoN5cCy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_zoK2ICy8Ee2RXfJ-Z5pdBw" aggregationKind="NONE" name="conn" navigable="true">
+      <modelElement href="borabora-crud.uml#_yL_MACy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_PlfcoCy9Ee2RXfJ-Z5pdBw" position="5.0,5.5"/>
+      <visibility xmi:id="_zoPuoCy8Ee2RXfJ-Z5pdBw" label="~"/>
+      <cardinality xmi:id="_zoPHkSy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_zoY4kCy8Ee2RXfJ-Z5pdBw" sourceAnchor="216.0,56.0" targetAnchor="0.0,31.0" target="_PNd-MCy9Ee2RXfJ-Z5pdBw" source="_zoaGsCy8Ee2RXfJ-Z5pdBw">
+    <modelElement href="borabora-crud.uml#_yOl0ECy8Ee2RXfJ-Z5pdBw"/>
+    <visualProperties xmi:id="_zsCpgCy8Ee2RXfJ-Z5pdBw" position="270.0,270.0"/>
+    <stereotypes xmi:id="_zoY4kSy8Ee2RXfJ-Z5pdBw" name="Reference">
+      <modelElement href="borabora-crud.uml#_yOxaQCy8Ee2RXfJ-Z5pdBw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_zoY4kiy8Ee2RXfJ-Z5pdBw" text="">
+      <visualProperties xmi:id="_Plif8Cy9Ee2RXfJ-Z5pdBw" position="-31.0,-8.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_zoY4kyy8Ee2RXfJ-Z5pdBw" aggregationKind="NONE" name="">
+      <modelElement href="borabora-crud.uml#_yOmbICy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_PlgqwCy9Ee2RXfJ-Z5pdBw" position="5.0,-48.5"/>
+      <visibility xmi:id="_zoY4lCy8Ee2RXfJ-Z5pdBw" label="+"/>
+      <cardinality xmi:id="_zoY4lSy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_zoY4liy8Ee2RXfJ-Z5pdBw" aggregationKind="NONE" name="pstm" navigable="true">
+      <modelElement href="borabora-crud.uml#_yMDdcCy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_PljHACy9Ee2RXfJ-Z5pdBw" position="-46.5,3.5"/>
+      <visibility xmi:id="_zoY4lyy8Ee2RXfJ-Z5pdBw" label="~"/>
+      <cardinality xmi:id="_zoY4mCy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_zo518Cy8Ee2RXfJ-Z5pdBw" sourceAnchor="298.0,56.0" targetAnchor="0.0,31.0" target="_PNbh8Cy9Ee2RXfJ-Z5pdBw" source="_zpQbQCy8Ee2RXfJ-Z5pdBw">
+    <modelElement href="borabora-crud.uml#_yOyBUCy8Ee2RXfJ-Z5pdBw"/>
+    <visualProperties xmi:id="_zsDQkCy8Ee2RXfJ-Z5pdBw" position="290.0,290.0"/>
+    <stereotypes xmi:id="_zpDm8Cy8Ee2RXfJ-Z5pdBw" name="Reference">
+      <modelElement href="borabora-crud.uml#_yO4vACy8Ee2RXfJ-Z5pdBw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_zpBxwCy8Ee2RXfJ-Z5pdBw" text="">
+      <visualProperties xmi:id="_PlmxYCy9Ee2RXfJ-Z5pdBw" position="-28.5,-8.499999999999943"/>
+    </nameVisual>
+    <sourceRole xmi:id="_zpCY0Cy8Ee2RXfJ-Z5pdBw" aggregationKind="NONE" name="">
+      <modelElement href="borabora-crud.uml#_yOyoYCy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_Plk8MCy9Ee2RXfJ-Z5pdBw" position="5.0,-48.5"/>
+      <visibility xmi:id="_zpH4YSy8Ee2RXfJ-Z5pdBw" label="+"/>
+      <cardinality xmi:id="_zpH4YCy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_zpC_4Cy8Ee2RXfJ-Z5pdBw" aggregationKind="NONE" name="conn" navigable="true">
+      <modelElement href="borabora-crud.uml#_yMI9ACy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_PlnYcCy9Ee2RXfJ-Z5pdBw" position="-46.999999999999886,3.5"/>
+      <visibility xmi:id="_zpIfcSy8Ee2RXfJ-Z5pdBw" label="~"/>
+      <cardinality xmi:id="_zpIfcCy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_zo7EECy8Ee2RXfJ-Z5pdBw" sourceAnchor="149.0,0.0" targetAnchor="61.0,61.0" target="_PNd-MCy9Ee2RXfJ-Z5pdBw" source="_zpQbQCy8Ee2RXfJ-Z5pdBw">
+    <modelElement href="borabora-crud.uml#_yO5WECy8Ee2RXfJ-Z5pdBw"/>
+    <visualProperties xmi:id="_zsDQkSy8Ee2RXfJ-Z5pdBw" position="310.0,310.0"/>
+    <stereotypes xmi:id="_zpFcICy8Ee2RXfJ-Z5pdBw" name="Reference">
+      <modelElement href="borabora-crud.uml#_yPAq0Cy8Ee2RXfJ-Z5pdBw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_zpDm8Sy8Ee2RXfJ-Z5pdBw" text="">
+      <visualProperties xmi:id="_PlrC0Cy9Ee2RXfJ-Z5pdBw" position="-18.500000000000114,-8.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_zpEOACy8Ee2RXfJ-Z5pdBw" aggregationKind="NONE" name="">
+      <modelElement href="borabora-crud.uml#_yO5WESy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_PlpNoCy9Ee2RXfJ-Z5pdBw" position="-20.5,-49.5"/>
+      <visibility xmi:id="_zpKUoCy8Ee2RXfJ-Z5pdBw" label="+"/>
+      <cardinality xmi:id="_zpJtkSy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_zpE1ECy8Ee2RXfJ-Z5pdBw" aggregationKind="NONE" name="pstm" navigable="true">
+      <modelElement href="borabora-crud.uml#_yMMnYCy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_Plrp4Cy9Ee2RXfJ-Z5pdBw" position="5.0,5.5"/>
+      <visibility xmi:id="_zpLiwCy8Ee2RXfJ-Z5pdBw" label="~"/>
+      <cardinality xmi:id="_zpK7sCy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_zqDFcCy8Ee2RXfJ-Z5pdBw" sourceAnchor="0.0,56.0" targetAnchor="76.0,31.0" target="_PNbh8Cy9Ee2RXfJ-Z5pdBw" source="_zqXOgCy8Ee2RXfJ-Z5pdBw">
+    <modelElement href="borabora-crud.uml#_yPBR4Cy8Ee2RXfJ-Z5pdBw"/>
+    <visualProperties xmi:id="_zsD3oCy8Ee2RXfJ-Z5pdBw" position="330.0,330.0"/>
+    <stereotypes xmi:id="_zqLoUCy8Ee2RXfJ-Z5pdBw" name="Reference">
+      <modelElement href="borabora-crud.uml#_yPHYgCy8Ee2RXfJ-Z5pdBw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_zqKaMCy8Ee2RXfJ-Z5pdBw" text="">
+      <visualProperties xmi:id="_PlvUQCy9Ee2RXfJ-Z5pdBw" position="-9.500000000000227,-8.499999999999943"/>
+    </nameVisual>
+    <sourceRole xmi:id="_zqKaMSy8Ee2RXfJ-Z5pdBw" aggregationKind="NONE" name="">
+      <modelElement href="borabora-crud.uml#_yPBR4Sy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_PltfECy9Ee2RXfJ-Z5pdBw" position="-20.0,3.5"/>
+      <visibility xmi:id="_zqPSsSy8Ee2RXfJ-Z5pdBw" label="+"/>
+      <cardinality xmi:id="_zqPSsCy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_zqLBQCy8Ee2RXfJ-Z5pdBw" aggregationKind="NONE" name="conn" navigable="true">
+      <modelElement href="borabora-crud.uml#_yMcfACy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_Plv7UCy9Ee2RXfJ-Z5pdBw" position="5.0,-48.499999999999886"/>
+      <visibility xmi:id="_zqP5wSy8Ee2RXfJ-Z5pdBw" label="~"/>
+      <cardinality xmi:id="_zqP5wCy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_zqDsgCy8Ee2RXfJ-Z5pdBw" sourceAnchor="121.0,0.0" targetAnchor="61.0,0.0" target="_PNd-MCy9Ee2RXfJ-Z5pdBw" source="_zqXOgCy8Ee2RXfJ-Z5pdBw">
+    <modelElement href="borabora-crud.uml#_yPImoCy8Ee2RXfJ-Z5pdBw"/>
+    <visualProperties xmi:id="_zsEesCy8Ee2RXfJ-Z5pdBw" position="350.0,350.0"/>
+    <bendpoints xmi:id="_bWHLACy9Ee2RXfJ-Z5pdBw" sourceY="-347" targetX="728" targetY="-86"/>
+    <bendpoints xmi:id="_bWHyECy9Ee2RXfJ-Z5pdBw" sourceX="-728" sourceY="-347" targetY="-86"/>
+    <stereotypes xmi:id="_zqNdgCy8Ee2RXfJ-Z5pdBw" name="Reference">
+      <modelElement href="borabora-crud.uml#_yPPUUCy8Ee2RXfJ-Z5pdBw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_zqLoUSy8Ee2RXfJ-Z5pdBw" text="">
+      <visualProperties xmi:id="_PlzlsCy9Ee2RXfJ-Z5pdBw" position="-343.5,-8.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_zqMPYCy8Ee2RXfJ-Z5pdBw" aggregationKind="NONE" name="">
+      <modelElement href="borabora-crud.uml#_yPImoSy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_PlxwgCy9Ee2RXfJ-Z5pdBw" position="-20.5,-49.5"/>
+      <visibility xmi:id="_zqRH4Sy8Ee2RXfJ-Z5pdBw" label="+"/>
+      <cardinality xmi:id="_zqRH4Cy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_zqM2cCy8Ee2RXfJ-Z5pdBw" aggregationKind="NONE" name="pstm" navigable="true">
+      <modelElement href="borabora-crud.uml#_yMgJYCy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_Pl0MwCy9Ee2RXfJ-Z5pdBw" position="-47.0,-49.5"/>
+      <visibility xmi:id="_zqSWACy8Ee2RXfJ-Z5pdBw" label="~"/>
+      <cardinality xmi:id="_zqRu8Cy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_zraXYCy8Ee2RXfJ-Z5pdBw" sourceAnchor="122.0,111.0" targetAnchor="38.0,0.0" target="_PNbh8Cy9Ee2RXfJ-Z5pdBw" source="_zrsrQCy8Ee2RXfJ-Z5pdBw">
+    <modelElement href="borabora-crud.uml#_yPPUUSy8Ee2RXfJ-Z5pdBw"/>
+    <visualProperties xmi:id="_zsFFwCy8Ee2RXfJ-Z5pdBw" position="-1301.0,45.0"/>
+    <stereotypes xmi:id="_zrhsISy8Ee2RXfJ-Z5pdBw" name="Reference">
+      <modelElement href="borabora-crud.uml#_yPWCACy8Ee2RXfJ-Z5pdBw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_zrgeACy8Ee2RXfJ-Z5pdBw" text="">
+      <visualProperties xmi:id="_Pl33ICy9Ee2RXfJ-Z5pdBw" position="-18.5,-7.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_zrhFECy8Ee2RXfJ-Z5pdBw" aggregationKind="NONE" name="">
+      <modelElement href="borabora-crud.uml#_yPP7YCy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_Pl1a4Cy9Ee2RXfJ-Z5pdBw" position="5.5,5.5"/>
+      <visibility xmi:id="_zrlWgCy8Ee2RXfJ-Z5pdBw" label="+"/>
+      <cardinality xmi:id="_zrkvcCy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_zrhsICy8Ee2RXfJ-Z5pdBw" aggregationKind="NONE" name="conn" navigable="true">
+      <modelElement href="borabora-crud.uml#_yM7AICy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_Pl4eMCy9Ee2RXfJ-Z5pdBw" position="-47.0,-49.5"/>
+      <visibility xmi:id="_zrl9kCy8Ee2RXfJ-Z5pdBw" label="~"/>
+      <cardinality xmi:id="_zrlWgSy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_zrblgCy8Ee2RXfJ-Z5pdBw" sourceAnchor="0.0,56.0" targetAnchor="121.0,31.0" target="_PNd-MCy9Ee2RXfJ-Z5pdBw" source="_zrsrQCy8Ee2RXfJ-Z5pdBw">
+    <modelElement href="borabora-crud.uml#_yPw4wCy8Ee2RXfJ-Z5pdBw"/>
+    <visualProperties xmi:id="_zsFs0Cy8Ee2RXfJ-Z5pdBw" position="-1301.0,45.0"/>
+    <stereotypes xmi:id="_zrjhUCy8Ee2RXfJ-Z5pdBw" name="Reference">
+      <modelElement href="borabora-crud.uml#_yP1xQCy8Ee2RXfJ-Z5pdBw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_zriTMCy8Ee2RXfJ-Z5pdBw" text="">
+      <visualProperties xmi:id="_Pl7hgCy9Ee2RXfJ-Z5pdBw" position="-6.5,-8.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_zriTMSy8Ee2RXfJ-Z5pdBw" aggregationKind="NONE" name="">
+      <modelElement href="borabora-crud.uml#_yPw4wSy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_Pl5sUCy9Ee2RXfJ-Z5pdBw" position="-20.0,3.5"/>
+      <visibility xmi:id="_zrnLsCy8Ee2RXfJ-Z5pdBw" label="+"/>
+      <cardinality xmi:id="_zrmkoSy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_zri6QCy8Ee2RXfJ-Z5pdBw" aggregationKind="NONE" name="pstm" navigable="true">
+      <modelElement href="borabora-crud.uml#_yM-qgCy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_Pl8IkCy9Ee2RXfJ-Z5pdBw" position="5.5,-48.50000000000003"/>
+      <visibility xmi:id="_zrnywSy8Ee2RXfJ-Z5pdBw" label="~"/>
+      <cardinality xmi:id="_zrnywCy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_zmI10Cy8Ee2RXfJ-Z5pdBw" name="Main">
+    <modelElement href="borabora-crud.uml#_xi7A4Cy8Ee2RXfJ-Z5pdBw"/>
+    <visualProperties xmi:id="_zmI10Sy8Ee2RXfJ-Z5pdBw" position="626.0,965.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_zmI10iy8Ee2RXfJ-Z5pdBw" label="+"/>
+    <operations xmi:id="_zmI10yy8Ee2RXfJ-Z5pdBw" name="main" staticOperation="true">
+      <modelElement href="borabora-crud.uml#_xjBHgCy8Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zmI11Cy8Ee2RXfJ-Z5pdBw" label="+"/>
+      <cardinality xmi:id="_zmI11Sy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_zmI11iy8Ee2RXfJ-Z5pdBw" name="args">
+        <modelElement href="borabora-crud.uml#_xjBukCy8Ee2RXfJ-Z5pdBw"/>
+        <cardinality xmi:id="_zmI11yy8Ee2RXfJ-Z5pdBw" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_zmI12Cy8Ee2RXfJ-Z5pdBw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_znPCACy8Ee2RXfJ-Z5pdBw" name="Destinos">
+    <modelElement href="borabora-crud.uml#_xjdzcCy8Ee2RXfJ-Z5pdBw"/>
+    <visualProperties xmi:id="_znPCASy8Ee2RXfJ-Z5pdBw" position="275.0,623.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_znPCAiy8Ee2RXfJ-Z5pdBw" label="+"/>
+    <attributes xmi:id="_znPCAyy8Ee2RXfJ-Z5pdBw" name="id_destino">
+      <modelElement href="borabora-crud.uml#_yLs4ICy8Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_znPCBCy8Ee2RXfJ-Z5pdBw" label="-"/>
+      <cardinality xmi:id="_znPCBSy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_znPCBiy8Ee2RXfJ-Z5pdBw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_znPCByy8Ee2RXfJ-Z5pdBw" name="id_admin">
+      <modelElement href="borabora-crud.uml#_yLuGQCy8Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_znPCCCy8Ee2RXfJ-Z5pdBw" label="-"/>
+      <cardinality xmi:id="_znPCCSy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_znPCCiy8Ee2RXfJ-Z5pdBw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_znPCCyy8Ee2RXfJ-Z5pdBw" name="destino">
+      <modelElement href="borabora-crud.uml#_yLv7cCy8Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_znPCDCy8Ee2RXfJ-Z5pdBw" label="-"/>
+      <cardinality xmi:id="_znPCDSy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_znPCDiy8Ee2RXfJ-Z5pdBw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_znPCDyy8Ee2RXfJ-Z5pdBw" name="data_ida">
+      <modelElement href="borabora-crud.uml#_yLxJkCy8Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_znPCECy8Ee2RXfJ-Z5pdBw" label="-"/>
+      <cardinality xmi:id="_znPCESy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_znPCEiy8Ee2RXfJ-Z5pdBw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_znPCEyy8Ee2RXfJ-Z5pdBw" name="horario_ida">
+      <modelElement href="borabora-crud.uml#_yLy-wCy8Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_znPCFCy8Ee2RXfJ-Z5pdBw" label="-"/>
+      <cardinality xmi:id="_znPCFSy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_znPCFiy8Ee2RXfJ-Z5pdBw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_znPCFyy8Ee2RXfJ-Z5pdBw" name="data_volta">
+      <modelElement href="borabora-crud.uml#_yL0M4Cy8Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_znPCGCy8Ee2RXfJ-Z5pdBw" label="-"/>
+      <cardinality xmi:id="_znPCGSy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_znPCGiy8Ee2RXfJ-Z5pdBw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_znPCGyy8Ee2RXfJ-Z5pdBw" name="horario_volta">
+      <modelElement href="borabora-crud.uml#_yL2CECy8Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_znPCHCy8Ee2RXfJ-Z5pdBw" label="-"/>
+      <cardinality xmi:id="_znPCHSy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_znPCHiy8Ee2RXfJ-Z5pdBw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_znPCHyy8Ee2RXfJ-Z5pdBw" name="cia_aerea">
+      <modelElement href="borabora-crud.uml#_yL3QMCy8Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_znPCICy8Ee2RXfJ-Z5pdBw" label="-"/>
+      <cardinality xmi:id="_znPCISy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_znPCIiy8Ee2RXfJ-Z5pdBw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_znPCIyy8Ee2RXfJ-Z5pdBw" name="hotel">
+      <modelElement href="borabora-crud.uml#_yL5FYCy8Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_znPCJCy8Ee2RXfJ-Z5pdBw" label="-"/>
+      <cardinality xmi:id="_znPCJSy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_znPCJiy8Ee2RXfJ-Z5pdBw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_znPCJyy8Ee2RXfJ-Z5pdBw" name="observacoes">
+      <modelElement href="borabora-crud.uml#_yL6TgCy8Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_znPCKCy8Ee2RXfJ-Z5pdBw" label="-"/>
+      <cardinality xmi:id="_znPCKSy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_znPCKiy8Ee2RXfJ-Z5pdBw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_znPCKyy8Ee2RXfJ-Z5pdBw" name="valor">
+      <modelElement href="borabora-crud.uml#_yL8IsCy8Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_znPCLCy8Ee2RXfJ-Z5pdBw" label="-"/>
+      <cardinality xmi:id="_znPpECy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_znPpESy8Ee2RXfJ-Z5pdBw" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_zoaGsCy8Ee2RXfJ-Z5pdBw" name="DestinosDAO" associationsOut="_zn5wYCy8Ee2RXfJ-Z5pdBw _zoY4kCy8Ee2RXfJ-Z5pdBw">
+    <modelElement href="borabora-crud.uml#_xj54UCy8Ee2RXfJ-Z5pdBw"/>
+    <visualProperties xmi:id="_zoaGsSy8Ee2RXfJ-Z5pdBw" position="15.0,91.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_zoaGsiy8Ee2RXfJ-Z5pdBw" label="+"/>
+    <attributes xmi:id="_zoaGsyy8Ee2RXfJ-Z5pdBw" defaultValue="null" name="conn">
+      <modelElement href="borabora-crud.uml#_yL_MACy8Ee2RXfJ-Z5pdBw"/>
+      <stereotypes xmi:id="_zoaGtCy8Ee2RXfJ-Z5pdBw" name="LegacyStyledElement">
+        <modelElement href="borabora-crud.uml#_yMCPUCy8Ee2RXfJ-Z5pdBw"/>
+      </stereotypes>
+      <visibility xmi:id="_zoaGtSy8Ee2RXfJ-Z5pdBw" label="~"/>
+      <cardinality xmi:id="_zoaGtiy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_zoaGtyy8Ee2RXfJ-Z5pdBw" name="Connection">
+        <modelElement href="borabora-crud.uml#_yImg0Cy8Ee2RXfJ-Z5pdBw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_zoaGuCy8Ee2RXfJ-Z5pdBw" defaultValue="null" name="pstm">
+      <modelElement href="borabora-crud.uml#_yMDdcCy8Ee2RXfJ-Z5pdBw"/>
+      <stereotypes xmi:id="_zoaGuSy8Ee2RXfJ-Z5pdBw" name="LegacyStyledElement">
+        <modelElement href="borabora-crud.uml#_yMF5sCy8Ee2RXfJ-Z5pdBw"/>
+      </stereotypes>
+      <visibility xmi:id="_zoaGuiy8Ee2RXfJ-Z5pdBw" label="~"/>
+      <cardinality xmi:id="_zoaGuyy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_zoaGvCy8Ee2RXfJ-Z5pdBw" name="PreparedStatement">
+        <modelElement href="borabora-crud.uml#_yI6C0Cy8Ee2RXfJ-Z5pdBw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_zoaGvSy8Ee2RXfJ-Z5pdBw" name="getDestinos">
+      <modelElement href="borabora-crud.uml#_xj_X4Cy8Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zoaGviy8Ee2RXfJ-Z5pdBw" label="+"/>
+      <cardinality xmi:id="_zoaGvyy8Ee2RXfJ-Z5pdBw" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_zoaGwCy8Ee2RXfJ-Z5pdBw">
+        <modelElement href="borabora-crud.uml#_xkAmACy8Ee2RXfJ-Z5pdBw"/>
+        <type xmi:id="_zoaGwSy8Ee2RXfJ-Z5pdBw" name="Destinos">
+          <modelElement href="borabora-crud.uml#_xjdzcCy8Ee2RXfJ-Z5pdBw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_zoaGwiy8Ee2RXfJ-Z5pdBw" name="removeById">
+      <modelElement href="borabora-crud.uml#_xkFegCy8Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zoaGwyy8Ee2RXfJ-Z5pdBw" label="+"/>
+      <cardinality xmi:id="_zoaGxCy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_zoaGxSy8Ee2RXfJ-Z5pdBw" name="id_destino">
+        <modelElement href="borabora-crud.uml#_xkFegSy8Ee2RXfJ-Z5pdBw"/>
+        <cardinality xmi:id="_zoaGxiy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+        <type xmi:id="_zoaGxyy8Ee2RXfJ-Z5pdBw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_zoaGyCy8Ee2RXfJ-Z5pdBw" name="save">
+      <modelElement href="borabora-crud.uml#_yJYj8Cy8Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zoaGySy8Ee2RXfJ-Z5pdBw" label="+"/>
+      <cardinality xmi:id="_zoaGyiy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_zoaGyyy8Ee2RXfJ-Z5pdBw" name="destino">
+        <modelElement href="borabora-crud.uml#_yJYj8Sy8Ee2RXfJ-Z5pdBw"/>
+        <cardinality xmi:id="_zoaGzCy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+        <type xmi:id="_zoaGzSy8Ee2RXfJ-Z5pdBw" name="Destinos">
+          <modelElement href="borabora-crud.uml#_xjdzcCy8Ee2RXfJ-Z5pdBw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_zoaGziy8Ee2RXfJ-Z5pdBw" name="update">
+      <modelElement href="borabora-crud.uml#_yJbnQCy8Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zoaGzyy8Ee2RXfJ-Z5pdBw" label="+"/>
+      <cardinality xmi:id="_zoaG0Cy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_zoaG0Sy8Ee2RXfJ-Z5pdBw" name="destino">
+        <modelElement href="borabora-crud.uml#_yJcOUCy8Ee2RXfJ-Z5pdBw"/>
+        <cardinality xmi:id="_zoaG0iy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+        <type xmi:id="_zoaG0yy8Ee2RXfJ-Z5pdBw" name="Destinos">
+          <modelElement href="borabora-crud.uml#_xjdzcCy8Ee2RXfJ-Z5pdBw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_zpQbQCy8Ee2RXfJ-Z5pdBw" name="AdministradoresDAO" associationsOut="_zo518Cy8Ee2RXfJ-Z5pdBw _zo7EECy8Ee2RXfJ-Z5pdBw">
+    <modelElement href="borabora-crud.uml#_xkV9MCy8Ee2RXfJ-Z5pdBw"/>
+    <visualProperties xmi:id="_zpQbQSy8Ee2RXfJ-Z5pdBw" position="338.0,377.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_zpQbQiy8Ee2RXfJ-Z5pdBw" label="+"/>
+    <attributes xmi:id="_zpQbQyy8Ee2RXfJ-Z5pdBw" defaultValue="null" name="conn">
+      <modelElement href="borabora-crud.uml#_yMI9ACy8Ee2RXfJ-Z5pdBw"/>
+      <stereotypes xmi:id="_zpQbRCy8Ee2RXfJ-Z5pdBw" name="LegacyStyledElement">
+        <modelElement href="borabora-crud.uml#_yMMAUCy8Ee2RXfJ-Z5pdBw"/>
+      </stereotypes>
+      <visibility xmi:id="_zpQbRSy8Ee2RXfJ-Z5pdBw" label="~"/>
+      <cardinality xmi:id="_zpQbRiy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_zpQbRyy8Ee2RXfJ-Z5pdBw" name="Connection">
+        <modelElement href="borabora-crud.uml#_yImg0Cy8Ee2RXfJ-Z5pdBw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_zpQbSCy8Ee2RXfJ-Z5pdBw" defaultValue="null" name="pstm">
+      <modelElement href="borabora-crud.uml#_yMMnYCy8Ee2RXfJ-Z5pdBw"/>
+      <stereotypes xmi:id="_zpQbSSy8Ee2RXfJ-Z5pdBw" name="LegacyStyledElement">
+        <modelElement href="borabora-crud.uml#_yMQRwCy8Ee2RXfJ-Z5pdBw"/>
+      </stereotypes>
+      <visibility xmi:id="_zpQbSiy8Ee2RXfJ-Z5pdBw" label="~"/>
+      <cardinality xmi:id="_zpQbSyy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_zpQbTCy8Ee2RXfJ-Z5pdBw" name="PreparedStatement">
+        <modelElement href="borabora-crud.uml#_yI6C0Cy8Ee2RXfJ-Z5pdBw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_zpQbTSy8Ee2RXfJ-Z5pdBw" name="getAdministradores">
+      <modelElement href="borabora-crud.uml#_xkegECy8Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zpQbTiy8Ee2RXfJ-Z5pdBw" label="+"/>
+      <cardinality xmi:id="_zpQbTyy8Ee2RXfJ-Z5pdBw" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_zpQbUCy8Ee2RXfJ-Z5pdBw">
+        <modelElement href="borabora-crud.uml#_xkgVQCy8Ee2RXfJ-Z5pdBw"/>
+        <type xmi:id="_zpQbUSy8Ee2RXfJ-Z5pdBw" name="Administradores">
+          <modelElement href="borabora-crud.uml#_xk6k8Cy8Ee2RXfJ-Z5pdBw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_zpQbUiy8Ee2RXfJ-Z5pdBw" name="removeById">
+      <modelElement href="borabora-crud.uml#_xkl00Cy8Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zpQbUyy8Ee2RXfJ-Z5pdBw" label="+"/>
+      <cardinality xmi:id="_zpQbVCy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_zpQbVSy8Ee2RXfJ-Z5pdBw" name="id_admin">
+        <modelElement href="borabora-crud.uml#_xkl00Sy8Ee2RXfJ-Z5pdBw"/>
+        <cardinality xmi:id="_zpQbViy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+        <type xmi:id="_zpQbVyy8Ee2RXfJ-Z5pdBw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_zpQbWCy8Ee2RXfJ-Z5pdBw" name="save">
+      <modelElement href="borabora-crud.uml#_yJlYQCy8Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zpQbWSy8Ee2RXfJ-Z5pdBw" label="+"/>
+      <cardinality xmi:id="_zpQbWiy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_zpQbWyy8Ee2RXfJ-Z5pdBw" name="administrador">
+        <modelElement href="borabora-crud.uml#_yJl_UCy8Ee2RXfJ-Z5pdBw"/>
+        <cardinality xmi:id="_zpQbXCy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+        <type xmi:id="_zpQbXSy8Ee2RXfJ-Z5pdBw" name="Administradores">
+          <modelElement href="borabora-crud.uml#_xk6k8Cy8Ee2RXfJ-Z5pdBw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_zpQbXiy8Ee2RXfJ-Z5pdBw" name="update">
+      <modelElement href="borabora-crud.uml#_yJn0gCy8Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zpQbXyy8Ee2RXfJ-Z5pdBw" label="+"/>
+      <cardinality xmi:id="_zpQbYCy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_zpRCUCy8Ee2RXfJ-Z5pdBw" name="administrador">
+        <modelElement href="borabora-crud.uml#_yJobkCy8Ee2RXfJ-Z5pdBw"/>
+        <cardinality xmi:id="_zpRCUSy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+        <type xmi:id="_zpRCUiy8Ee2RXfJ-Z5pdBw" name="Administradores">
+          <modelElement href="borabora-crud.uml#_xk6k8Cy8Ee2RXfJ-Z5pdBw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_zqXOgCy8Ee2RXfJ-Z5pdBw" name="PermissoesDAO" associationsOut="_zqDFcCy8Ee2RXfJ-Z5pdBw _zqDsgCy8Ee2RXfJ-Z5pdBw">
+    <modelElement href="borabora-crud.uml#_xlLDoCy8Ee2RXfJ-Z5pdBw"/>
+    <visualProperties xmi:id="_zqXOgSy8Ee2RXfJ-Z5pdBw" position="1094.0,377.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_zqXOgiy8Ee2RXfJ-Z5pdBw" label="+"/>
+    <attributes xmi:id="_zqXOgyy8Ee2RXfJ-Z5pdBw" defaultValue="null" name="conn">
+      <modelElement href="borabora-crud.uml#_yMcfACy8Ee2RXfJ-Z5pdBw"/>
+      <stereotypes xmi:id="_zqXOhCy8Ee2RXfJ-Z5pdBw" name="LegacyStyledElement">
+        <modelElement href="borabora-crud.uml#_yMfiUCy8Ee2RXfJ-Z5pdBw"/>
+      </stereotypes>
+      <visibility xmi:id="_zqXOhSy8Ee2RXfJ-Z5pdBw" label="~"/>
+      <cardinality xmi:id="_zqXOhiy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_zqXOhyy8Ee2RXfJ-Z5pdBw" name="Connection">
+        <modelElement href="borabora-crud.uml#_yImg0Cy8Ee2RXfJ-Z5pdBw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_zqXOiCy8Ee2RXfJ-Z5pdBw" defaultValue="null" name="pstm">
+      <modelElement href="borabora-crud.uml#_yMgJYCy8Ee2RXfJ-Z5pdBw"/>
+      <stereotypes xmi:id="_zqXOiSy8Ee2RXfJ-Z5pdBw" name="LegacyStyledElement">
+        <modelElement href="borabora-crud.uml#_yMjzwCy8Ee2RXfJ-Z5pdBw"/>
+      </stereotypes>
+      <visibility xmi:id="_zqXOiiy8Ee2RXfJ-Z5pdBw" label="~"/>
+      <cardinality xmi:id="_zqXOiyy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_zqXOjCy8Ee2RXfJ-Z5pdBw" name="PreparedStatement">
+        <modelElement href="borabora-crud.uml#_yI6C0Cy8Ee2RXfJ-Z5pdBw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_zqXOjSy8Ee2RXfJ-Z5pdBw" name="getPermissoes">
+      <modelElement href="borabora-crud.uml#_xlQjMCy8Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zqXOjiy8Ee2RXfJ-Z5pdBw" label="+"/>
+      <cardinality xmi:id="_zqXOjyy8Ee2RXfJ-Z5pdBw" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_zqXOkCy8Ee2RXfJ-Z5pdBw">
+        <modelElement href="borabora-crud.uml#_xlRxUCy8Ee2RXfJ-Z5pdBw"/>
+        <type xmi:id="_zqXOkSy8Ee2RXfJ-Z5pdBw" name="Permissoes">
+          <modelElement href="borabora-crud.uml#_xifjECy8Ee2RXfJ-Z5pdBw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_zqXOkiy8Ee2RXfJ-Z5pdBw" name="removeById">
+      <modelElement href="borabora-crud.uml#_xlXQ4Cy8Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zqXOkyy8Ee2RXfJ-Z5pdBw" label="+"/>
+      <cardinality xmi:id="_zqXOlCy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_zqXOlSy8Ee2RXfJ-Z5pdBw" name="id_permissao">
+        <modelElement href="borabora-crud.uml#_xlX38Cy8Ee2RXfJ-Z5pdBw"/>
+        <cardinality xmi:id="_zqXOliy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+        <type xmi:id="_zqXOlyy8Ee2RXfJ-Z5pdBw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_zqXOmCy8Ee2RXfJ-Z5pdBw" name="save">
+      <modelElement href="borabora-crud.uml#_yJxlgCy8Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zqXOmSy8Ee2RXfJ-Z5pdBw" label="+"/>
+      <cardinality xmi:id="_zqXOmiy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_zqXOmyy8Ee2RXfJ-Z5pdBw" name="permissao">
+        <modelElement href="borabora-crud.uml#_yJyMkCy8Ee2RXfJ-Z5pdBw"/>
+        <cardinality xmi:id="_zqXOnCy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+        <type xmi:id="_zqXOnSy8Ee2RXfJ-Z5pdBw" name="Permissoes">
+          <modelElement href="borabora-crud.uml#_xifjECy8Ee2RXfJ-Z5pdBw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_zqXOniy8Ee2RXfJ-Z5pdBw" name="update">
+      <modelElement href="borabora-crud.uml#_yJ0BwCy8Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zqXOnyy8Ee2RXfJ-Z5pdBw" label="+"/>
+      <cardinality xmi:id="_zqXOoCy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_zqXOoSy8Ee2RXfJ-Z5pdBw" name="permissao">
+        <modelElement href="borabora-crud.uml#_yJ0o0Cy8Ee2RXfJ-Z5pdBw"/>
+        <cardinality xmi:id="_zqXOoiy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+        <type xmi:id="_zqXOoyy8Ee2RXfJ-Z5pdBw" name="Permissoes">
+          <modelElement href="borabora-crud.uml#_xifjECy8Ee2RXfJ-Z5pdBw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:PackageVisual" xmi:id="_zsKlUCy8Ee2RXfJ-Z5pdBw" name="java">
+    <modelElement href="borabora-crud.uml#_xfNlkCy8Ee2RXfJ-Z5pdBw"/>
+    <visualProperties xmi:id="_zsKlUSy8Ee2RXfJ-Z5pdBw" position="11.0,1145.0" size="-1.0,-1.0"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_PNbh8Cy9Ee2RXfJ-Z5pdBw" name="Connection" associationsIn="_zn5wYCy8Ee2RXfJ-Z5pdBw _zo518Cy8Ee2RXfJ-Z5pdBw _zqDFcCy8Ee2RXfJ-Z5pdBw _zraXYCy8Ee2RXfJ-Z5pdBw">
+    <modelElement href="borabora-crud.uml#_yImg0Cy8Ee2RXfJ-Z5pdBw"/>
+    <visualProperties xmi:id="_PNbh8Sy9Ee2RXfJ-Z5pdBw" position="826.0,402.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_PNbh8iy9Ee2RXfJ-Z5pdBw" name="Reference">
+      <modelElement href="borabora-crud.uml#_yIqyQCy8Ee2RXfJ-Z5pdBw"/>
+    </stereotypes>
+    <visibility xmi:id="_PNbh8yy9Ee2RXfJ-Z5pdBw" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_PNd-MCy9Ee2RXfJ-Z5pdBw" name="PreparedStatement" associationsIn="_zoY4kCy8Ee2RXfJ-Z5pdBw _zo7EECy8Ee2RXfJ-Z5pdBw _zqDsgCy8Ee2RXfJ-Z5pdBw _zrblgCy8Ee2RXfJ-Z5pdBw">
+    <modelElement href="borabora-crud.uml#_yI6C0Cy8Ee2RXfJ-Z5pdBw"/>
+    <visualProperties xmi:id="_PNd-MSy9Ee2RXfJ-Z5pdBw" position="426.0,116.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_PNd-Miy9Ee2RXfJ-Z5pdBw" name="Reference">
+      <modelElement href="borabora-crud.uml#_yJAJcCy8Ee2RXfJ-Z5pdBw"/>
+    </stereotypes>
+    <visibility xmi:id="_PNd-Myy9Ee2RXfJ-Z5pdBw" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_zrsrQCy8Ee2RXfJ-Z5pdBw" name="PromocoesDAO" associationsOut="_zraXYCy8Ee2RXfJ-Z5pdBw _zrblgCy8Ee2RXfJ-Z5pdBw">
+    <modelElement href="borabora-crud.uml#_xmFpoCy8Ee2RXfJ-Z5pdBw"/>
+    <visualProperties xmi:id="_zrtSUCy8Ee2RXfJ-Z5pdBw" position="742.0,91.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_zrtSUSy8Ee2RXfJ-Z5pdBw" label="+"/>
+    <attributes xmi:id="_zrtSUiy8Ee2RXfJ-Z5pdBw" defaultValue="null" name="conn">
+      <modelElement href="borabora-crud.uml#_yM7AICy8Ee2RXfJ-Z5pdBw"/>
+      <stereotypes xmi:id="_zrtSUyy8Ee2RXfJ-Z5pdBw" name="LegacyStyledElement">
+        <modelElement href="borabora-crud.uml#_yM-DcCy8Ee2RXfJ-Z5pdBw"/>
+      </stereotypes>
+      <visibility xmi:id="_zrtSVCy8Ee2RXfJ-Z5pdBw" label="~"/>
+      <cardinality xmi:id="_zrtSVSy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_zrtSViy8Ee2RXfJ-Z5pdBw" name="Connection">
+        <modelElement href="borabora-crud.uml#_yImg0Cy8Ee2RXfJ-Z5pdBw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_zrtSVyy8Ee2RXfJ-Z5pdBw" defaultValue="null" name="pstm">
+      <modelElement href="borabora-crud.uml#_yM-qgCy8Ee2RXfJ-Z5pdBw"/>
+      <stereotypes xmi:id="_zrtSWCy8Ee2RXfJ-Z5pdBw" name="LegacyStyledElement">
+        <modelElement href="borabora-crud.uml#_yNBt0Cy8Ee2RXfJ-Z5pdBw"/>
+      </stereotypes>
+      <visibility xmi:id="_zrtSWSy8Ee2RXfJ-Z5pdBw" label="~"/>
+      <cardinality xmi:id="_zrtSWiy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_zrtSWyy8Ee2RXfJ-Z5pdBw" name="PreparedStatement">
+        <modelElement href="borabora-crud.uml#_yI6C0Cy8Ee2RXfJ-Z5pdBw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_zrtSXCy8Ee2RXfJ-Z5pdBw" name="getPromocoes">
+      <modelElement href="borabora-crud.uml#_xmLwQCy8Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zrtSXSy8Ee2RXfJ-Z5pdBw" label="+"/>
+      <cardinality xmi:id="_zrtSXiy8Ee2RXfJ-Z5pdBw" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_zrtSXyy8Ee2RXfJ-Z5pdBw">
+        <modelElement href="borabora-crud.uml#_xmM-YCy8Ee2RXfJ-Z5pdBw"/>
+        <type xmi:id="_zrtSYCy8Ee2RXfJ-Z5pdBw" name="Promocoes">
+          <modelElement href="borabora-crud.uml#_xlrZ8Cy8Ee2RXfJ-Z5pdBw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_zrtSYSy8Ee2RXfJ-Z5pdBw" name="removeById">
+      <modelElement href="borabora-crud.uml#_xmSd8Cy8Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zrtSYiy8Ee2RXfJ-Z5pdBw" label="+"/>
+      <cardinality xmi:id="_zrtSYyy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_zrtSZCy8Ee2RXfJ-Z5pdBw" name="id_promocao">
+        <modelElement href="borabora-crud.uml#_xmTsECy8Ee2RXfJ-Z5pdBw"/>
+        <cardinality xmi:id="_zrtSZSy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+        <type xmi:id="_zrtSZiy8Ee2RXfJ-Z5pdBw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_zrtSZyy8Ee2RXfJ-Z5pdBw" name="save">
+      <modelElement href="borabora-crud.uml#_yJ-Z0Cy8Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zrtSaCy8Ee2RXfJ-Z5pdBw" label="+"/>
+      <cardinality xmi:id="_zrtSaSy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_zrtSaiy8Ee2RXfJ-Z5pdBw" name="promocao">
+        <modelElement href="borabora-crud.uml#_yJ_A4Cy8Ee2RXfJ-Z5pdBw"/>
+        <cardinality xmi:id="_zrtSayy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+        <type xmi:id="_zrtSbCy8Ee2RXfJ-Z5pdBw" name="Promocoes">
+          <modelElement href="borabora-crud.uml#_xlrZ8Cy8Ee2RXfJ-Z5pdBw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_zrtSbSy8Ee2RXfJ-Z5pdBw" name="update">
+      <modelElement href="borabora-crud.uml#_yKA2ECy8Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zrtSbiy8Ee2RXfJ-Z5pdBw" label="+"/>
+      <cardinality xmi:id="_zrtSbyy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_zrtScCy8Ee2RXfJ-Z5pdBw" name="promocao">
+        <modelElement href="borabora-crud.uml#_yKBdICy8Ee2RXfJ-Z5pdBw"/>
+        <cardinality xmi:id="_zrtScSy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+        <type xmi:id="_zrtSciy8Ee2RXfJ-Z5pdBw" name="Promocoes">
+          <modelElement href="borabora-crud.uml#_xlrZ8Cy8Ee2RXfJ-Z5pdBw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_zq3k0Cy8Ee2RXfJ-Z5pdBw" name="Promocoes">
+    <modelElement href="borabora-crud.uml#_xlrZ8Cy8Ee2RXfJ-Z5pdBw"/>
+    <visualProperties xmi:id="_zq3k0Sy8Ee2RXfJ-Z5pdBw" position="10.0,626.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_zq3k0iy8Ee2RXfJ-Z5pdBw" label="+"/>
+    <attributes xmi:id="_zq3k0yy8Ee2RXfJ-Z5pdBw" name="id_promocao">
+      <modelElement href="borabora-crud.uml#_yMm3ECy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_49hUwCy9Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zq3k1Cy8Ee2RXfJ-Z5pdBw" label="-"/>
+      <cardinality xmi:id="_zq3k1Sy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_zq3k1iy8Ee2RXfJ-Z5pdBw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_zq3k1yy8Ee2RXfJ-Z5pdBw" name="id_admin">
+      <modelElement href="borabora-crud.uml#_yMoFMCy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_49h70Cy9Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zq3k2Cy8Ee2RXfJ-Z5pdBw" label="-"/>
+      <cardinality xmi:id="_zq3k2Sy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_zq3k2iy8Ee2RXfJ-Z5pdBw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_zq3k2yy8Ee2RXfJ-Z5pdBw" name="destino">
+      <modelElement href="borabora-crud.uml#_yMp6YCy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_49ii4Cy9Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zq3k3Cy8Ee2RXfJ-Z5pdBw" label="-"/>
+      <cardinality xmi:id="_zq3k3Sy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_zq3k3iy8Ee2RXfJ-Z5pdBw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_zq3k3yy8Ee2RXfJ-Z5pdBw" name="data_ida">
+      <modelElement href="borabora-crud.uml#_yMrvkCy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_49ii4Sy9Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zq3k4Cy8Ee2RXfJ-Z5pdBw" label="-"/>
+      <cardinality xmi:id="_zq3k4Sy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_zq3k4iy8Ee2RXfJ-Z5pdBw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_zq3k4yy8Ee2RXfJ-Z5pdBw" name="horario_ida">
+      <modelElement href="borabora-crud.uml#_yMtkwCy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_49jJ8Cy9Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zq3k5Cy8Ee2RXfJ-Z5pdBw" label="-"/>
+      <cardinality xmi:id="_zq3k5Sy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_zq3k5iy8Ee2RXfJ-Z5pdBw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_zq3k5yy8Ee2RXfJ-Z5pdBw" name="data_volta">
+      <modelElement href="borabora-crud.uml#_yMvZ8Cy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_49jxACy9Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zq3k6Cy8Ee2RXfJ-Z5pdBw" label="-"/>
+      <cardinality xmi:id="_zq3k6Sy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_zq3k6iy8Ee2RXfJ-Z5pdBw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_zq3k6yy8Ee2RXfJ-Z5pdBw" name="horario_volta">
+      <modelElement href="borabora-crud.uml#_yMwoECy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_49jxASy9Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zq3k7Cy8Ee2RXfJ-Z5pdBw" label="-"/>
+      <cardinality xmi:id="_zq3k7Sy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_zq3k7iy8Ee2RXfJ-Z5pdBw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_zq3k7yy8Ee2RXfJ-Z5pdBw" name="cia_aerea">
+      <modelElement href="borabora-crud.uml#_yMydQCy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_49kYECy9Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zq3k8Cy8Ee2RXfJ-Z5pdBw" label="-"/>
+      <cardinality xmi:id="_zq3k8Sy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_zq3k8iy8Ee2RXfJ-Z5pdBw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_zq3k8yy8Ee2RXfJ-Z5pdBw" name="hotel">
+      <modelElement href="borabora-crud.uml#_yM0ScCy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_49kYESy9Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zq3k9Cy8Ee2RXfJ-Z5pdBw" label="-"/>
+      <cardinality xmi:id="_zq3k9Sy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_zq3k9iy8Ee2RXfJ-Z5pdBw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_zq3k9yy8Ee2RXfJ-Z5pdBw" name="observacoes">
+      <modelElement href="borabora-crud.uml#_yM1gkCy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_49k_ICy9Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zq3k-Cy8Ee2RXfJ-Z5pdBw" label="-"/>
+      <cardinality xmi:id="_zq3k-Sy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_zq3k-iy8Ee2RXfJ-Z5pdBw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_zq3k-yy8Ee2RXfJ-Z5pdBw" name="valor">
+      <modelElement href="borabora-crud.uml#_yM2usCy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_49k_ISy9Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zq3k_Cy8Ee2RXfJ-Z5pdBw" label="-"/>
+      <cardinality xmi:id="_zq3k_Sy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_zq3k_iy8Ee2RXfJ-Z5pdBw" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_zq3k_yy8Ee2RXfJ-Z5pdBw" name="valor_promocional">
+      <modelElement href="borabora-crud.uml#_yM380Cy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_49lmMCy9Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zq3lACy8Ee2RXfJ-Z5pdBw" label="-"/>
+      <cardinality xmi:id="_zq3lASy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_zq3lAiy8Ee2RXfJ-Z5pdBw" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_zpu8YCy8Ee2RXfJ-Z5pdBw" name="Administradores">
+    <modelElement href="borabora-crud.uml#_xk6k8Cy8Ee2RXfJ-Z5pdBw"/>
+    <visualProperties xmi:id="_zpu8YSy8Ee2RXfJ-Z5pdBw" position="504.0,628.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_zpu8Yiy8Ee2RXfJ-Z5pdBw" label="+"/>
+    <attributes xmi:id="_zpu8Yyy8Ee2RXfJ-Z5pdBw" name="id_admin">
+      <modelElement href="borabora-crud.uml#_yMSuACy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_g_mbsCzAEe2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zpu8ZCy8Ee2RXfJ-Z5pdBw" label="-"/>
+      <cardinality xmi:id="_zpu8ZSy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_zpu8Ziy8Ee2RXfJ-Z5pdBw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_zpu8Zyy8Ee2RXfJ-Z5pdBw" name="id_permissao">
+      <modelElement href="borabora-crud.uml#_yMVKQCy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_g_nCwCzAEe2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zpu8aCy8Ee2RXfJ-Z5pdBw" label="-"/>
+      <cardinality xmi:id="_zpu8aSy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_zpu8aiy8Ee2RXfJ-Z5pdBw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_zpu8ayy8Ee2RXfJ-Z5pdBw" name="nome">
+      <modelElement href="borabora-crud.uml#_yMW_cCy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_g_np0CzAEe2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zpu8bCy8Ee2RXfJ-Z5pdBw" label="-"/>
+      <cardinality xmi:id="_zpu8bSy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_zpu8biy8Ee2RXfJ-Z5pdBw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_zpu8byy8Ee2RXfJ-Z5pdBw" name="email">
+      <modelElement href="borabora-crud.uml#_yMYNkCy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_g_np0SzAEe2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zpu8cCy8Ee2RXfJ-Z5pdBw" label="-"/>
+      <cardinality xmi:id="_zpu8cSy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_zpu8ciy8Ee2RXfJ-Z5pdBw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_zpu8cyy8Ee2RXfJ-Z5pdBw" name="senha">
+      <modelElement href="borabora-crud.uml#_yMZbsCy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_g_np0izAEe2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zpu8dCy8Ee2RXfJ-Z5pdBw" label="-"/>
+      <cardinality xmi:id="_zpu8dSy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_zpu8diy8Ee2RXfJ-Z5pdBw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_zi-0ICy8Ee2RXfJ-Z5pdBw" name="Permissoes">
+    <modelElement href="borabora-crud.uml#_xifjECy8Ee2RXfJ-Z5pdBw"/>
+    <visualProperties xmi:id="_zi-0ISy8Ee2RXfJ-Z5pdBw" position="413.0,955.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_zi_bMCy8Ee2RXfJ-Z5pdBw" label="+"/>
+    <attributes xmi:id="_zi_bMSy8Ee2RXfJ-Z5pdBw" name="id_permissao">
+      <modelElement href="borabora-crud.uml#_yLZ9MCy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_bqeUoCzBEe2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zi_bMiy8Ee2RXfJ-Z5pdBw" label="+"/>
+      <cardinality xmi:id="_zi_bMyy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_zi_bNCy8Ee2RXfJ-Z5pdBw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_zi_bNSy8Ee2RXfJ-Z5pdBw" name="tipo">
+      <modelElement href="borabora-crud.uml#_yLeOoCy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_bqe7sCzBEe2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zi_bNiy8Ee2RXfJ-Z5pdBw" label="+"/>
+      <cardinality xmi:id="_zi_bNyy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_zi_bOCy8Ee2RXfJ-Z5pdBw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_zmtdkCy8Ee2RXfJ-Z5pdBw" name="Conexao">
+    <modelElement href="borabora-crud.uml#_xjK4gCy8Ee2RXfJ-Z5pdBw"/>
+    <visualProperties xmi:id="_zmtdkSy8Ee2RXfJ-Z5pdBw" position="10.0,959.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_zmtdkiy8Ee2RXfJ-Z5pdBw" label="+"/>
+    <attributes xmi:id="_zmtdkyy8Ee2RXfJ-Z5pdBw" defaultValue="&quot;root&quot;" name="USERNAME" staticAttribute="true">
+      <modelElement href="borabora-crud.uml#_yLgq4Cy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_G7g5oCy-Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zmtdlCy8Ee2RXfJ-Z5pdBw" label="-"/>
+      <cardinality xmi:id="_zmtdlSy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_zmtdliy8Ee2RXfJ-Z5pdBw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_zmtdlyy8Ee2RXfJ-Z5pdBw" defaultValue="&quot;123456&quot;" name="PASSWORD" staticAttribute="true">
+      <modelElement href="borabora-crud.uml#_yLjuMCy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_G7hgsCy-Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zmtdmCy8Ee2RXfJ-Z5pdBw" label="-"/>
+      <cardinality xmi:id="_zmtdmSy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_zmtdmiy8Ee2RXfJ-Z5pdBw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_zmtdmyy8Ee2RXfJ-Z5pdBw" defaultValue="&quot;jdbc:mysql://localhost:3306/borabora&quot;" name="DATABASE_URL" staticAttribute="true">
+      <modelElement href="borabora-crud.uml#_yLmxgCy8Ee2RXfJ-Z5pdBw"/>
+      <visualProperties xmi:id="_G7hgsSy-Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zmtdnCy8Ee2RXfJ-Z5pdBw" label="-"/>
+      <cardinality xmi:id="_zmtdnSy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_zmtdniy8Ee2RXfJ-Z5pdBw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_zmtdnyy8Ee2RXfJ-Z5pdBw" name="createConnectionToMySQL" staticOperation="true">
+      <modelElement href="borabora-crud.uml#_xjPxACy8Ee2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_zmtdoCy8Ee2RXfJ-Z5pdBw" label="+"/>
+      <cardinality xmi:id="_zmtdoSy8Ee2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_zmtdoiy8Ee2RXfJ-Z5pdBw">
+        <modelElement href="borabora-crud.uml#_yKYpgCy8Ee2RXfJ-Z5pdBw"/>
+        <type xmi:id="_zmtdoyy8Ee2RXfJ-Z5pdBw" name="Connection">
+          <modelElement href="borabora-crud.uml#_yImg0Cy8Ee2RXfJ-Z5pdBw"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_vtFuYCzBEe2RXfJ-Z5pdBw" name="Conexao_1">
+    <modelElement href="borabora-crud.uml#_vroV0CzBEe2RXfJ-Z5pdBw"/>
+    <visualProperties xmi:id="_vtFuYSzBEe2RXfJ-Z5pdBw" position="737.0,738.0"/>
+    <visibility xmi:id="_vtFuYizBEe2RXfJ-Z5pdBw" label="+"/>
+    <attributes xmi:id="_vtFuYyzBEe2RXfJ-Z5pdBw" name="id_permissao" staticAttribute="true">
+      <modelElement href="borabora-crud.uml#_vroV0SzBEe2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_vtFuZCzBEe2RXfJ-Z5pdBw" label="-"/>
+      <cardinality xmi:id="_vtFuZSzBEe2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_4R4Z8CzBEe2RXfJ-Z5pdBw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_vtFuZyzBEe2RXfJ-Z5pdBw" defaultValue="&quot;123456&quot;" name="PASSWORD" staticAttribute="true">
+      <modelElement href="borabora-crud.uml#_vroV0yzBEe2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_vtFuaCzBEe2RXfJ-Z5pdBw" label="-"/>
+      <cardinality xmi:id="_vtFuaSzBEe2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_vtFuaizBEe2RXfJ-Z5pdBw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_vtFuayzBEe2RXfJ-Z5pdBw" defaultValue="&quot;jdbc:mysql://localhost:3306/borabora&quot;" name="DATABASE_URL" staticAttribute="true">
+      <modelElement href="borabora-crud.uml#_vroV1SzBEe2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_vtFubCzBEe2RXfJ-Z5pdBw" label="-"/>
+      <cardinality xmi:id="_vtFubSzBEe2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <type xmi:id="_vtFubizBEe2RXfJ-Z5pdBw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_vtFubyzBEe2RXfJ-Z5pdBw" name="createConnectionToMySQL" staticOperation="true">
+      <modelElement href="borabora-crud.uml#_vroV2SzBEe2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_vtFucCzBEe2RXfJ-Z5pdBw" label="+"/>
+      <cardinality xmi:id="_vtFucSzBEe2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_vtFucizBEe2RXfJ-Z5pdBw">
+        <modelElement href="borabora-crud.uml#_vroV2izBEe2RXfJ-Z5pdBw"/>
+        <type xmi:id="_vtFucyzBEe2RXfJ-Z5pdBw" name="Connection">
+          <modelElement href="borabora-crud.uml#_yImg0Cy8Ee2RXfJ-Z5pdBw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_9c2qACzBEe2RXfJ-Z5pdBw" name="getId_permissao">
+      <modelElement href="borabora-crud.uml#_9c000CzBEe2RXfJ-Z5pdBw"/>
+      <visibility xmi:id="_9c2qASzBEe2RXfJ-Z5pdBw" label="+"/>
+      <cardinality xmi:id="_9c2qAizBEe2RXfJ-Z5pdBw" label="1" max="1" min="1"/>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

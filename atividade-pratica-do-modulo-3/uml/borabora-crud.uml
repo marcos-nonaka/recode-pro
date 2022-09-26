@@ -1,0 +1,1765 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_raWgICy8Ee2RXfJ-Z5pdBw" name="borabora_crud">
+    <eAnnotations xmi:id="_wrJEUCy8Ee2RXfJ-Z5pdBw" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_wrUDcCy8Ee2RXfJ-Z5pdBw" source="codegen">
+        <details xmi:id="_wrUqgCy8Ee2RXfJ-Z5pdBw" key="codegenDirectory" value="/borabora-crud/src"/>
+        <details xmi:id="_y4oPkCy8Ee2RXfJ-Z5pdBw" key="AssociatedSourceCode" value="/borabora-crud/src/Permissoes.java;4050875486/1;/borabora-crud/src/Main.java;1248253145/1;/borabora-crud/src/Conexao.java;3740749389/1;/borabora-crud/src/Destinos.java;3677343229/1;/borabora-crud/src/DestinosDAO.java;2849819165/1;/borabora-crud/src/AdministradoresDAO.java;2917876059/1;/borabora-crud/src/Administradores.java;982681449/1;/borabora-crud/src/PermissoesDAO.java;2019877570/1;/borabora-crud/src/Promocoes.java;2747241688/1;/borabora-crud/src/PromocoesDAO.java;3918012727/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_xitlgCy8Ee2RXfJ-Z5pdBw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_xiuzoCy8Ee2RXfJ-Z5pdBw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_xiuzoSy8Ee2RXfJ-Z5pdBw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_xiwBwCy8Ee2RXfJ-Z5pdBw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_xiwBwSy8Ee2RXfJ-Z5pdBw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_xiwo0Cy8Ee2RXfJ-Z5pdBw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_xixP4Cy8Ee2RXfJ-Z5pdBw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_xix28Cy8Ee2RXfJ-Z5pdBw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_xi06QCy8Ee2RXfJ-Z5pdBw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_xfNlkCy8Ee2RXfJ-Z5pdBw" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_xfOzsCy8Ee2RXfJ-Z5pdBw" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="_yIZFcCy8Ee2RXfJ-Z5pdBw" name="Scanner"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_yJIFQCy8Ee2RXfJ-Z5pdBw" name="ArrayList"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_yJPaACy8Ee2RXfJ-Z5pdBw" name="List"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_xfcPECy8Ee2RXfJ-Z5pdBw" name="sql">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_yImg0Cy8Ee2RXfJ-Z5pdBw" name="Connection"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_yIrZUCy8Ee2RXfJ-Z5pdBw" name="DriverManager"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_yI6C0Cy8Ee2RXfJ-Z5pdBw" name="PreparedStatement"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_yJAwgCy8Ee2RXfJ-Z5pdBw" name="ResultSet"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_yKZ3oCy8Ee2RXfJ-Z5pdBw" name="lang">
+        <packagedElement xmi:type="uml:Class" xmi:id="_yKaesCy8Ee2RXfJ-Z5pdBw" name="Exception"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xifjECy8Ee2RXfJ-Z5pdBw" name="Permissoes">
+      <ownedAttribute xmi:id="_yLZ9MCy8Ee2RXfJ-Z5pdBw" name="id_permissao" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yLeOoCy8Ee2RXfJ-Z5pdBw" name="tipo" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xi7A4Cy8Ee2RXfJ-Z5pdBw" name="Main">
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_yNjSQCy8Ee2RXfJ-Z5pdBw" name="main" specification="_xjBHgCy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_yNj5UCy8Ee2RXfJ-Z5pdBw" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yNj5USy8Ee2RXfJ-Z5pdBw" value="*"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>Scanner leia = new Scanner(System.in);&#xD;
+		int opcao, opcaoPermissoes, opcaoAdministradores, opcaoDestinos, opcaoPromocoes, id;&#xD;
+		String tipo, nome, email, senha, data_ida, horario_ida, data_volta, horario_volta, cia_aerea, hotel, observacoes;&#xD;
+		double valor, valor_promocional;&#xD;
+&#xD;
+		PermissoesDAO permissoesDAO = new PermissoesDAO();&#xD;
+		AdministradoresDAO administradoresDAO = new AdministradoresDAO();&#xD;
+		DestinosDAO destinosDAO = new DestinosDAO();&#xD;
+		PromocoesDAO promocoesDAO = new PromocoesDAO();&#xD;
+&#xD;
+		do {&#xD;
+			System.out.println(&quot;========== CRUD BORABORA ==========&quot;);&#xD;
+			System.out.println(&quot;1 - Cadastro de Permissoes&quot;);&#xD;
+			System.out.println(&quot;2 - Cadastro de Administradores&quot;);&#xD;
+			System.out.println(&quot;3 - Cadastro de Destinos&quot;);&#xD;
+			System.out.println(&quot;4 - Cadastro de Promocoes&quot;);&#xD;
+			System.out.println(&quot;5 - Sair&quot;);&#xD;
+			System.out.println(&quot;===================================&quot;);&#xD;
+			opcao = leia.nextInt();&#xD;
+&#xD;
+			switch (opcao) {&#xD;
+			case 1:&#xD;
+				do {&#xD;
+					System.out.println(&quot;========== Permissoes ==========&quot;);&#xD;
+					System.out.println(&quot;1 - Cadastrar permissao&quot;);&#xD;
+					System.out.println(&quot;2 - Mostrar permissoes&quot;);&#xD;
+					System.out.println(&quot;3 - Atualizar permissao&quot;);&#xD;
+					System.out.println(&quot;4 - Excluir permissao&quot;);&#xD;
+					System.out.println(&quot;5 - Voltar&quot;);&#xD;
+					System.out.println(&quot;================================&quot;);&#xD;
+					opcaoPermissoes = leia.nextInt();&#xD;
+&#xD;
+					switch (opcaoPermissoes) {&#xD;
+					case 1:&#xD;
+						Permissoes permissao = new Permissoes();&#xD;
+						System.out.println(&quot;Informe o TIPO de permissao:&quot;);&#xD;
+						tipo = leia.next();&#xD;
+						permissao.setTipo(tipo);&#xD;
+&#xD;
+						permissoesDAO.save(permissao);&#xD;
+						System.out.println(&quot;Permissao adicionada com sucesso!&quot;);&#xD;
+						break;&#xD;
+					case 2:&#xD;
+						for (Permissoes p : permissoesDAO.getPermissoes()) {&#xD;
+&#xD;
+							System.out.println(&quot;ID: &quot; + p.getId_permissao());&#xD;
+							System.out.println(&quot;TIPO: &quot; + p.getTipo());&#xD;
+&#xD;
+							System.out.println(&quot;----------------------------------- &quot;);&#xD;
+						}&#xD;
+						break;&#xD;
+					case 3:&#xD;
+						Permissoes permissaoUpdated = new Permissoes();&#xD;
+						System.out.println(&quot;Informe o ID da permissao a ser atualizada:&quot;);&#xD;
+						id = leia.nextInt();&#xD;
+						permissaoUpdated.setId_permissao(id);&#xD;
+&#xD;
+						System.out.println(&quot;Informe o novo TIPO da permissao:&quot;);&#xD;
+						tipo = leia.next();&#xD;
+						permissaoUpdated.setTipo(tipo);&#xD;
+&#xD;
+						permissoesDAO.update(permissaoUpdated);&#xD;
+						break;&#xD;
+					case 4:&#xD;
+						System.out.println(&quot;Qual o ID da permissao que voce quer excluir?&quot;);&#xD;
+						id = leia.nextInt();&#xD;
+&#xD;
+						permissoesDAO.removeById(id);&#xD;
+						break;&#xD;
+					}&#xD;
+				} while (opcaoPermissoes != 5);&#xD;
+				break;&#xD;
+			case 2:&#xD;
+				do {&#xD;
+					System.out.println(&quot;========== Administradores ==========&quot;);&#xD;
+					System.out.println(&quot;1 - Cadastrar administrador&quot;);&#xD;
+					System.out.println(&quot;2 - Mostrar administradores&quot;);&#xD;
+					System.out.println(&quot;3 - Atualizar administrador&quot;);&#xD;
+					System.out.println(&quot;4 - Excluir administrador&quot;);&#xD;
+					System.out.println(&quot;5 - Voltar&quot;);&#xD;
+					System.out.println(&quot;=====================================&quot;);&#xD;
+					opcaoAdministradores = leia.nextInt();&#xD;
+&#xD;
+					switch (opcaoAdministradores) {&#xD;
+					case 1:&#xD;
+						Administradores administrador = new Administradores();&#xD;
+						System.out.println(&quot;Informe o NOME do administrador:&quot;);&#xD;
+						nome = leia.next();&#xD;
+						administrador.setNome(nome);&#xD;
+&#xD;
+						System.out.println(&quot;Informe o E-MAIL do administrador:&quot;);&#xD;
+						email = leia.next();&#xD;
+						administrador.setEmail(email);&#xD;
+						&#xD;
+						System.out.println(&quot;Informe a SENHA do administrador:&quot;);&#xD;
+						senha = leia.next();&#xD;
+						administrador.setSenha(senha);&#xD;
+						&#xD;
+						System.out.println(&quot;Informe o ID DA PERMISSAO para administrador:&quot;);&#xD;
+						id = leia.nextInt();&#xD;
+						administrador.setId_permissao(id);&#xD;
+						&#xD;
+						administradoresDAO.save(administrador);&#xD;
+						break;&#xD;
+					case 2:&#xD;
+						for (Administradores a : administradoresDAO.getAdministradores()) {&#xD;
+&#xD;
+							System.out.println(&quot;ID: &quot; + a.getId_admin());&#xD;
+							System.out.println(&quot;ID DA PERMISSAO: &quot; + a.getId_permissao());&#xD;
+							System.out.println(&quot;NOME: &quot; + a.getNome());&#xD;
+							System.out.println(&quot;E-MAIL: &quot; + a.getEmail());&#xD;
+							System.out.println(&quot;SENHA: &quot; + a.getSenha());&#xD;
+&#xD;
+							System.out.println(&quot;----------------------------------- &quot;);&#xD;
+						}&#xD;
+						break;&#xD;
+					case 3:&#xD;
+						Administradores administradorUpdated = new Administradores();&#xD;
+						System.out.println(&quot;Informe o ID do administrador a ser atualizado:&quot;);&#xD;
+						id = leia.nextInt();&#xD;
+						administradorUpdated.setId_admin(id);&#xD;
+&#xD;
+						System.out.println(&quot;Informe o novo NOME do administrador:&quot;);&#xD;
+						nome = leia.next();&#xD;
+						administradorUpdated.setNome(nome);&#xD;
+&#xD;
+						System.out.println(&quot;Informe o novo E-MAIL do administrador:&quot;);&#xD;
+						email = leia.next();&#xD;
+						administradorUpdated.setEmail(email);&#xD;
+&#xD;
+						System.out.println(&quot;Informe a nova SENHA do administrador:&quot;);&#xD;
+						senha = leia.next();&#xD;
+						administradorUpdated.setSenha(senha);&#xD;
+&#xD;
+						administradoresDAO.update(administradorUpdated);&#xD;
+						break;&#xD;
+					case 4:&#xD;
+						System.out.println(&quot;Qual o ID do administrador que voce quer excluir?&quot;);&#xD;
+						id = leia.nextInt();&#xD;
+&#xD;
+						administradoresDAO.removeById(id);&#xD;
+						break;&#xD;
+					}&#xD;
+				} while (opcaoAdministradores != 5);&#xD;
+				break;&#xD;
+			case 3:&#xD;
+				do {&#xD;
+					System.out.println(&quot;========== Destinos ==========&quot;);&#xD;
+					System.out.println(&quot;1 - Cadastrar destino&quot;);&#xD;
+					System.out.println(&quot;2 - Mostrar destinos&quot;);&#xD;
+					System.out.println(&quot;3 - Atualizar destino&quot;);&#xD;
+					System.out.println(&quot;4 - Excluir destino&quot;);&#xD;
+					System.out.println(&quot;5 - Voltar&quot;);&#xD;
+					System.out.println(&quot;==============================&quot;);&#xD;
+					opcaoDestinos = leia.nextInt();&#xD;
+&#xD;
+					switch (opcaoDestinos) {&#xD;
+					case 1:&#xD;
+						Destinos destino = new Destinos();&#xD;
+						System.out.println(&quot;Informe o DESTINO da viagem:&quot;);&#xD;
+						nome = leia.next();&#xD;
+						destino.setDestino(nome);&#xD;
+&#xD;
+						System.out.println(&quot;Informe a DATA DE IDA:&quot;);&#xD;
+						data_ida = leia.next();&#xD;
+						destino.setData_ida(data_ida);&#xD;
+						&#xD;
+						System.out.println(&quot;Informe o HORARIO DE IDA:&quot;);&#xD;
+						horario_ida = leia.next();&#xD;
+						destino.setHorario_ida(horario_ida);&#xD;
+						&#xD;
+						System.out.println(&quot;Informe a DATA DE VOLTA:&quot;);&#xD;
+						data_volta = leia.next();&#xD;
+						destino.setData_volta(data_volta);&#xD;
+						&#xD;
+						System.out.println(&quot;Informe o HORARIO DE VOLTA:&quot;);&#xD;
+						horario_volta = leia.next();&#xD;
+						destino.setHorario_volta(horario_volta);&#xD;
+						&#xD;
+						System.out.println(&quot;Informe a CIA AEREA:&quot;);&#xD;
+						cia_aerea = leia.next();&#xD;
+						destino.setCia_aerea(cia_aerea);&#xD;
+						&#xD;
+						System.out.println(&quot;Informe o HOTEL:&quot;);&#xD;
+						hotel = leia.next();&#xD;
+						destino.setHotel(hotel);&#xD;
+						&#xD;
+						System.out.println(&quot;Informe as OBSERVACOES da viagem:&quot;);&#xD;
+						observacoes = leia.next();&#xD;
+						destino.setObservacoes(observacoes);&#xD;
+						&#xD;
+						System.out.println(&quot;Informe o VALOR do pacote de viagem:&quot;);&#xD;
+						valor = leia.nextDouble();&#xD;
+						destino.setValor(valor);&#xD;
+						&#xD;
+						System.out.println(&quot;Informe o ID DO ADMINISTRADOR de sistema:&quot;);&#xD;
+						id = leia.nextInt();&#xD;
+						destino.setId_admin(id);&#xD;
+&#xD;
+						destinosDAO.save(destino);&#xD;
+						break;&#xD;
+					case 2:&#xD;
+						for (Destinos d : destinosDAO.getDestinos()) {&#xD;
+&#xD;
+							System.out.println(&quot;ID: &quot; + d.getId_destino());&#xD;
+							System.out.println(&quot;ID DO ADMINISTRADOR: &quot; + d.getId_admin());&#xD;
+							System.out.println(&quot;DESTINO: &quot; + d.getDestino());&#xD;
+							System.out.println(&quot;DATA DE IDA: &quot; + d.getData_ida());&#xD;
+							System.out.println(&quot;HORARIO DE IDA: &quot; + d.getHorario_ida());&#xD;
+							System.out.println(&quot;DATA DE VOLTA: &quot; + d.getData_volta());&#xD;
+							System.out.println(&quot;HORARIO DE VOLTA: &quot; + d.getHorario_volta());&#xD;
+							System.out.println(&quot;CIA AEREA: &quot; + d.getCia_aerea());&#xD;
+							System.out.println(&quot;HOTEL: &quot; + d.getHotel());&#xD;
+							System.out.println(&quot;OBSERVACOES: &quot; + d.getObservacoes());&#xD;
+							System.out.println(&quot;VALOR: &quot; + d.getValor());&#xD;
+&#xD;
+							System.out.println(&quot;----------------------------------- &quot;);&#xD;
+						}&#xD;
+						break;&#xD;
+					case 3:&#xD;
+						Destinos destinoUpdated = new Destinos();&#xD;
+						System.out.println(&quot;Informe o ID do destino a ser atualizado:&quot;);&#xD;
+						id = leia.nextInt();&#xD;
+						destinoUpdated.setId_destino(id);&#xD;
+&#xD;
+						System.out.println(&quot;Informe o novo nome do DESTINO:&quot;);&#xD;
+						nome = leia.next();&#xD;
+						destinoUpdated.setDestino(nome);&#xD;
+&#xD;
+						System.out.println(&quot;Informe a nova DATA DE IDA:&quot;);&#xD;
+						data_ida = leia.next();&#xD;
+						destinoUpdated.setData_ida(data_ida);&#xD;
+&#xD;
+						System.out.println(&quot;Informe o novo HORARIO DE IDA:&quot;);&#xD;
+						horario_ida = leia.next();&#xD;
+						destinoUpdated.setHorario_ida(horario_ida);&#xD;
+&#xD;
+						System.out.println(&quot;Informe a nova DATA DE VOLTA:&quot;);&#xD;
+						data_volta = leia.next();&#xD;
+						destinoUpdated.setData_volta(data_volta);&#xD;
+&#xD;
+						System.out.println(&quot;Informe o novo HORARIO DE VOLTA:&quot;);&#xD;
+						horario_volta = leia.next();&#xD;
+						destinoUpdated.setHorario_volta(horario_volta);&#xD;
+&#xD;
+						System.out.println(&quot;Informe a nova CIA AEREA:&quot;);&#xD;
+						cia_aerea = leia.next();&#xD;
+						destinoUpdated.setCia_aerea(cia_aerea);&#xD;
+&#xD;
+						System.out.println(&quot;Informe o novo HOTEL:&quot;);&#xD;
+						hotel = leia.next();&#xD;
+						destinoUpdated.setHotel(hotel);&#xD;
+&#xD;
+						System.out.println(&quot;Informe as novas OBSERVACOES da viagem:&quot;);&#xD;
+						observacoes = leia.next();&#xD;
+						destinoUpdated.setObservacoes(observacoes);&#xD;
+&#xD;
+						System.out.println(&quot;Informe o novo VALOR da viagem:&quot;);&#xD;
+						valor = leia.nextDouble();&#xD;
+						destinoUpdated.setValor(valor);&#xD;
+&#xD;
+						destinosDAO.update(destinoUpdated);&#xD;
+						break;&#xD;
+					case 4:&#xD;
+						System.out.println(&quot;Qual o ID do destino que voce quer excluir?&quot;);&#xD;
+						id = leia.nextInt();&#xD;
+&#xD;
+						destinosDAO.removeById(id);&#xD;
+						break;&#xD;
+					}&#xD;
+				} while (opcaoDestinos != 5);&#xD;
+				break;&#xD;
+			case 4:&#xD;
+				do {&#xD;
+					System.out.println(&quot;========== Promocoes ==========&quot;);&#xD;
+					System.out.println(&quot;1 - Cadastrar promocao&quot;);&#xD;
+					System.out.println(&quot;2 - Mostrar promocoes&quot;);&#xD;
+					System.out.println(&quot;3 - Atualizar promocao&quot;);&#xD;
+					System.out.println(&quot;4 - Excluir promocao&quot;);&#xD;
+					System.out.println(&quot;5 - Voltar&quot;);&#xD;
+					System.out.println(&quot;===============================&quot;);&#xD;
+					opcaoPromocoes = leia.nextInt();&#xD;
+&#xD;
+					switch (opcaoPromocoes) {&#xD;
+					case 1:&#xD;
+						Promocoes promocao = new Promocoes();&#xD;
+						System.out.println(&quot;Informe o DESTINO da viagem:&quot;);&#xD;
+						nome = leia.next();&#xD;
+						promocao.setDestino(nome);&#xD;
+&#xD;
+						System.out.println(&quot;Informe a DATA DE IDA:&quot;);&#xD;
+						data_ida = leia.next();&#xD;
+						promocao.setData_ida(data_ida);&#xD;
+						&#xD;
+						System.out.println(&quot;Informe o HORARIO DE IDA:&quot;);&#xD;
+						horario_ida = leia.next();&#xD;
+						promocao.setHorario_ida(horario_ida);&#xD;
+						&#xD;
+						System.out.println(&quot;Informe a DATA DE VOLTA:&quot;);&#xD;
+						data_volta = leia.next();&#xD;
+						promocao.setData_volta(data_volta);&#xD;
+						&#xD;
+						System.out.println(&quot;Informe o HORARIO DE VOLTA:&quot;);&#xD;
+						horario_volta = leia.next();&#xD;
+						promocao.setHorario_volta(horario_volta);&#xD;
+						&#xD;
+						System.out.println(&quot;Informe a CIA AEREA:&quot;);&#xD;
+						cia_aerea = leia.next();&#xD;
+						promocao.setCia_aerea(cia_aerea);&#xD;
+						&#xD;
+						System.out.println(&quot;Informe o HOTEL:&quot;);&#xD;
+						hotel = leia.next();&#xD;
+						promocao.setHotel(hotel);&#xD;
+						&#xD;
+						System.out.println(&quot;Informe as OBSERVACOES da viagem:&quot;);&#xD;
+						observacoes = leia.next();&#xD;
+						promocao.setObservacoes(observacoes);&#xD;
+						&#xD;
+						System.out.println(&quot;Informe o VALOR do pacote de viagem:&quot;);&#xD;
+						valor = leia.nextDouble();&#xD;
+						promocao.setValor(valor);&#xD;
+						&#xD;
+						System.out.println(&quot;Informe o VALOR PROMOCIONAL do pacote de viagem:&quot;);&#xD;
+						valor_promocional = leia.nextDouble();&#xD;
+						promocao.setValor_promocional(valor_promocional);&#xD;
+						&#xD;
+						System.out.println(&quot;Informe o ID DO ADMINISTRADOR de sistema:&quot;);&#xD;
+						id = leia.nextInt();&#xD;
+						promocao.setId_admin(id);&#xD;
+&#xD;
+						promocoesDAO.save(promocao);&#xD;
+						break;&#xD;
+					case 2:&#xD;
+						for (Promocoes p : promocoesDAO.getPromocoes()) {&#xD;
+&#xD;
+							System.out.println(&quot;ID: &quot; + p.getId_promocao());&#xD;
+							System.out.println(&quot;ID DO ADMINISTRADOR: &quot; + p.getId_admin());&#xD;
+							System.out.println(&quot;DESTINO: &quot; + p.getDestino());&#xD;
+							System.out.println(&quot;DATA DE IDA: &quot; + p.getData_ida());&#xD;
+							System.out.println(&quot;HORARIO DE IDA: &quot; + p.getHorario_ida());&#xD;
+							System.out.println(&quot;DATA DE VOLTA: &quot; + p.getData_volta());&#xD;
+							System.out.println(&quot;HORARIO DE VOLTA: &quot; + p.getHorario_volta());&#xD;
+							System.out.println(&quot;CIA AEREA: &quot; + p.getCia_aerea());&#xD;
+							System.out.println(&quot;HOTEL: &quot; + p.getHotel());&#xD;
+							System.out.println(&quot;OBSERVACOES: &quot; + p.getObservacoes());&#xD;
+							System.out.println(&quot;VALOR: &quot; + p.getValor());&#xD;
+							System.out.println(&quot;VALOR PROMOCIONAL: &quot; + p.getValor_promocional());&#xD;
+&#xD;
+							System.out.println(&quot;----------------------------------- &quot;);&#xD;
+						}&#xD;
+						break;&#xD;
+					case 3:&#xD;
+						Promocoes promocaoUpdated = new Promocoes();&#xD;
+						System.out.println(&quot;Informe o ID da promocao a ser atualizada:&quot;);&#xD;
+						id = leia.nextInt();&#xD;
+						promocaoUpdated.setId_promocao(id);&#xD;
+&#xD;
+						System.out.println(&quot;Informe o novo nome do DESTINO:&quot;);&#xD;
+						nome = leia.next();&#xD;
+						promocaoUpdated.setDestino(nome);&#xD;
+&#xD;
+						System.out.println(&quot;Informe a nova DATA DE IDA:&quot;);&#xD;
+						data_ida = leia.next();&#xD;
+						promocaoUpdated.setData_ida(data_ida);&#xD;
+&#xD;
+						System.out.println(&quot;Informe o novo HORARIO DE IDA:&quot;);&#xD;
+						horario_ida = leia.next();&#xD;
+						promocaoUpdated.setHorario_ida(horario_ida);&#xD;
+&#xD;
+						System.out.println(&quot;Informe a nova DATA DE VOLTA:&quot;);&#xD;
+						data_volta = leia.next();&#xD;
+						promocaoUpdated.setData_volta(data_volta);&#xD;
+&#xD;
+						System.out.println(&quot;Informe o novo HORARIO DE VOLTA:&quot;);&#xD;
+						horario_volta = leia.next();&#xD;
+						promocaoUpdated.setHorario_volta(horario_volta);&#xD;
+&#xD;
+						System.out.println(&quot;Informe a nova CIA AEREA:&quot;);&#xD;
+						cia_aerea = leia.next();&#xD;
+						promocaoUpdated.setCia_aerea(cia_aerea);&#xD;
+&#xD;
+						System.out.println(&quot;Informe o novo HOTEL:&quot;);&#xD;
+						hotel = leia.next();&#xD;
+						promocaoUpdated.setHotel(hotel);&#xD;
+&#xD;
+						System.out.println(&quot;Informe as novas OBSERVACOES da viagem:&quot;);&#xD;
+						observacoes = leia.next();&#xD;
+						promocaoUpdated.setObservacoes(observacoes);&#xD;
+&#xD;
+						System.out.println(&quot;Informe o novo VALOR da viagem:&quot;);&#xD;
+						valor = leia.nextDouble();&#xD;
+						promocaoUpdated.setValor(valor);&#xD;
+&#xD;
+						System.out.println(&quot;Informe o novo VALOR PROMOCIONAL do pacote de viagem:&quot;);&#xD;
+						valor_promocional = leia.nextDouble();&#xD;
+						promocaoUpdated.setValor(valor_promocional);&#xD;
+&#xD;
+						promocoesDAO.update(promocaoUpdated);&#xD;
+						break;&#xD;
+					case 4:&#xD;
+						System.out.println(&quot;Qual o ID da promocao que voce quer excluir?&quot;);&#xD;
+						id = leia.nextInt();&#xD;
+&#xD;
+						promocoesDAO.removeById(id);&#xD;
+						break;&#xD;
+					}&#xD;
+				} while (opcaoPromocoes != 5);&#xD;
+				break;&#xD;
+			case 5:&#xD;
+				leia.close();&#xD;
+				System.out.println(&quot;Ate mais!&quot;);&#xD;
+				break;&#xD;
+			}&#xD;
+		} while (opcao != 5);&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_xjBHgCy8Ee2RXfJ-Z5pdBw" name="main" isStatic="true" method="_yNjSQCy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_xjBukCy8Ee2RXfJ-Z5pdBw" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xjIcQCy8Ee2RXfJ-Z5pdBw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xjK4gCy8Ee2RXfJ-Z5pdBw" name="Conexao">
+      <ownedAttribute xmi:id="_yLgq4Cy8Ee2RXfJ-Z5pdBw" name="USERNAME" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_yLjHICy8Ee2RXfJ-Z5pdBw" value="&quot;root&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yLjuMCy8Ee2RXfJ-Z5pdBw" name="PASSWORD" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_izZmgCy-Ee2RXfJ-Z5pdBw" value="&quot;123456&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yLmxgCy8Ee2RXfJ-Z5pdBw" name="DATABASE_URL" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_yLp00Cy8Ee2RXfJ-Z5pdBw" value="&quot;jdbc:mysql://localhost:3306/borabora&quot;"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_yNu4cCy8Ee2RXfJ-Z5pdBw" name="createConnectionToMySQL" specification="_xjPxACy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_yNu4cSy8Ee2RXfJ-Z5pdBw" type="_yImg0Cy8Ee2RXfJ-Z5pdBw" direction="return"/>
+        <language>java</language>
+        <body>// Cria a conexão com o banco de dados&#xD;
+		Connection connection = DriverManager.getConnection(DATABASE_URL, USERNAME, PASSWORD);&#xD;
+&#xD;
+		return connection;&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_xjPxACy8Ee2RXfJ-Z5pdBw" name="createConnectionToMySQL" isStatic="true" method="_yNu4cCy8Ee2RXfJ-Z5pdBw" raisedException="_yKaesCy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_yKYpgCy8Ee2RXfJ-Z5pdBw" type="_yImg0Cy8Ee2RXfJ-Z5pdBw" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xjdzcCy8Ee2RXfJ-Z5pdBw" name="Destinos">
+      <ownedAttribute xmi:id="_yLs4ICy8Ee2RXfJ-Z5pdBw" name="id_destino" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yLuGQCy8Ee2RXfJ-Z5pdBw" name="id_admin" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yLv7cCy8Ee2RXfJ-Z5pdBw" name="destino" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yLxJkCy8Ee2RXfJ-Z5pdBw" name="data_ida" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yLy-wCy8Ee2RXfJ-Z5pdBw" name="horario_ida" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yL0M4Cy8Ee2RXfJ-Z5pdBw" name="data_volta" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yL2CECy8Ee2RXfJ-Z5pdBw" name="horario_volta" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yL3QMCy8Ee2RXfJ-Z5pdBw" name="cia_aerea" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yL5FYCy8Ee2RXfJ-Z5pdBw" name="hotel" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yL6TgCy8Ee2RXfJ-Z5pdBw" name="observacoes" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yL8IsCy8Ee2RXfJ-Z5pdBw" name="valor" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xj54UCy8Ee2RXfJ-Z5pdBw" name="DestinosDAO">
+      <ownedAttribute xmi:id="_yL_MACy8Ee2RXfJ-Z5pdBw" name="conn" visibility="package" type="_yImg0Cy8Ee2RXfJ-Z5pdBw" association="_yOcDECy8Ee2RXfJ-Z5pdBw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_yL_zECy8Ee2RXfJ-Z5pdBw" value="null"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yMDdcCy8Ee2RXfJ-Z5pdBw" name="pstm" visibility="package" type="_yI6C0Cy8Ee2RXfJ-Z5pdBw" association="_yOl0ECy8Ee2RXfJ-Z5pdBw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_yMEEgCy8Ee2RXfJ-Z5pdBw" value="null"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_yNwtoCy8Ee2RXfJ-Z5pdBw" name="save" specification="_yJYj8Cy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_yNxUsCy8Ee2RXfJ-Z5pdBw" name="destino" type="_xjdzcCy8Ee2RXfJ-Z5pdBw"/>
+        <language>java</language>
+        <body>// Os ? são os parâmetros que nós vamos adicionar na base de dados&#xD;
+&#xD;
+		String sql = &quot;INSERT INTO destinos(destino,data_ida,horario_ida,data_volta,horario_volta,cia_aerea,hotel,observacoes,valor,id_admin)&quot; + &quot; VALUES(?,?,?,?,?,?,?,?,?,?)&quot;;&#xD;
+&#xD;
+		try {&#xD;
+			// Cria uma conexão com o banco&#xD;
+			conn = Conexao.createConnectionToMySQL();&#xD;
+&#xD;
+			// Cria um PreparedStatment, classe usada para executar a query&#xD;
+			pstm = conn.prepareStatement(sql);&#xD;
+&#xD;
+			// Adiciona o valor do primeiro parâmetro da sql&#xD;
+			pstm.setString(1, destino.getDestino());&#xD;
+&#xD;
+			// Adiciona o valor do segundo parâmetro da sql&#xD;
+			pstm.setString(2, destino.getData_ida());&#xD;
+&#xD;
+			// Adiciona o valor do terceiro parâmetro da sql&#xD;
+			pstm.setString(3, destino.getHorario_ida());&#xD;
+&#xD;
+			// Adiciona o valor do quarto parâmetro da sql&#xD;
+			pstm.setString(4, destino.getData_volta());&#xD;
+&#xD;
+			// Adiciona o valor do quinto parâmetro da sql&#xD;
+			pstm.setString(5, destino.getHorario_volta());&#xD;
+&#xD;
+			// Adiciona o valor do sexto parâmetro da sql&#xD;
+			pstm.setString(6, destino.getCia_aerea());&#xD;
+&#xD;
+			// Adiciona o valor do sétimo parâmetro da sql&#xD;
+			pstm.setString(7, destino.getHotel());&#xD;
+&#xD;
+			// Adiciona o valor do oitavo parâmetro da sql&#xD;
+			pstm.setString(8, destino.getObservacoes());&#xD;
+&#xD;
+			// Adiciona o valor do nôno parâmetro da sql&#xD;
+			pstm.setDouble(9, destino.getValor());&#xD;
+&#xD;
+			// Adiciona o valor do décimo parâmetro da sql&#xD;
+			pstm.setInt(10, destino.getId_admin());&#xD;
+			&#xD;
+			// Executa a sql para inserção dos dados&#xD;
+			pstm.execute();&#xD;
+&#xD;
+			System.out.println(&quot;Destino adicionado com sucesso!&quot;);&#xD;
+		} catch (Exception e) {&#xD;
+			System.out.println(&quot;ID DE ADMINISTRADOR nao encontrado no banco de dados ou caractere invalido!&quot;);&#xD;
+		} finally {&#xD;
+&#xD;
+			// Fecha as conexões&#xD;
+			try {&#xD;
+				if (pstm != null) {&#xD;
+					pstm.close();&#xD;
+				}&#xD;
+				if (conn != null) {&#xD;
+					conn.close();&#xD;
+				}&#xD;
+			} catch (Exception e) {&#xD;
+				e.printStackTrace();&#xD;
+			}&#xD;
+		}&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_yNyi0Cy8Ee2RXfJ-Z5pdBw" name="getDestinos" specification="_xj_X4Cy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_yNyi0Sy8Ee2RXfJ-Z5pdBw" type="_xjdzcCy8Ee2RXfJ-Z5pdBw" isOrdered="true" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yNyi0iy8Ee2RXfJ-Z5pdBw" value="*"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>String sql = &quot;SELECT * FROM destinos&quot;;&#xD;
+&#xD;
+		List&lt;Destinos> destinos = new ArrayList&lt;Destinos>();&#xD;
+&#xD;
+		// Classe que vai recuperar os dados do banco de dados&#xD;
+		ResultSet rset = null;&#xD;
+&#xD;
+		try {&#xD;
+			conn = Conexao.createConnectionToMySQL();&#xD;
+&#xD;
+			pstm = conn.prepareStatement(sql);&#xD;
+&#xD;
+			rset = pstm.executeQuery();&#xD;
+&#xD;
+			// Enquanto existir dados no banco de dados, faça&#xD;
+			while (rset.next()) {&#xD;
+&#xD;
+				Destinos destino = new Destinos();&#xD;
+&#xD;
+				// Recupera o id no banco e atribui ele ao objeto&#xD;
+				destino.setId_destino(rset.getInt(&quot;id_destino&quot;));&#xD;
+&#xD;
+				// Recupera o id do administrador no banco e atribui ele ao objeto&#xD;
+				destino.setId_admin(rset.getInt(&quot;id_admin&quot;));&#xD;
+&#xD;
+				// Recupera o destino no banco e atribui ele ao objeto&#xD;
+				destino.setDestino(rset.getString(&quot;destino&quot;));&#xD;
+&#xD;
+				// Recupera a data de ida no banco e atribui ela ao objeto&#xD;
+				destino.setData_ida(rset.getString(&quot;data_ida&quot;));&#xD;
+&#xD;
+				// Recupera o horário de ida no banco e atribui ele ao objeto&#xD;
+				destino.setHorario_ida(rset.getString(&quot;horario_ida&quot;));&#xD;
+&#xD;
+				// Recupera a data de volta no banco e atribui ela ao objeto&#xD;
+				destino.setData_volta(rset.getString(&quot;data_volta&quot;));&#xD;
+&#xD;
+				// Recupera o horário de volta no banco e atribui ele ao objeto&#xD;
+				destino.setHorario_volta(rset.getString(&quot;horario_volta&quot;));&#xD;
+&#xD;
+				// Recupera a cia aérea no banco e atribui ela ao objeto&#xD;
+				destino.setCia_aerea(rset.getString(&quot;cia_aerea&quot;));&#xD;
+&#xD;
+				// Recupera o hotel no banco e atribui ele ao objeto&#xD;
+				destino.setHotel(rset.getString(&quot;hotel&quot;));&#xD;
+&#xD;
+				// Recupera as observações no banco e atribui elas ao objeto&#xD;
+				destino.setObservacoes(rset.getString(&quot;observacoes&quot;));&#xD;
+				&#xD;
+				// Recupera o valor no banco e atribui ele ao objeto&#xD;
+				destino.setValor(rset.getDouble(&quot;valor&quot;));&#xD;
+&#xD;
+				// Adiciona o destino recuperado a lista de destinos&#xD;
+				destinos.add(destino);&#xD;
+			}&#xD;
+		} catch (Exception e) {&#xD;
+			e.printStackTrace();&#xD;
+		} finally {&#xD;
+			try {&#xD;
+				if (rset != null) {&#xD;
+					rset.close();&#xD;
+				}&#xD;
+				if (pstm != null) {&#xD;
+					pstm.close();&#xD;
+				}&#xD;
+				if (conn != null) {&#xD;
+					conn.close();&#xD;
+				}&#xD;
+			} catch (Exception e) {&#xD;
+				e.printStackTrace();&#xD;
+			}&#xD;
+		}&#xD;
+		if (destinos.size() == 0) {&#xD;
+			System.out.println(&quot;Nao ha destinos cadastrados no banco de dados!&quot;);&#xD;
+		}&#xD;
+		return destinos;&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_yN0YACy8Ee2RXfJ-Z5pdBw" name="update" specification="_yJbnQCy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_yN0YASy8Ee2RXfJ-Z5pdBw" name="destino" type="_xjdzcCy8Ee2RXfJ-Z5pdBw"/>
+        <language>java</language>
+        <body>boolean consulta = false;&#xD;
+&#xD;
+		for (Destinos d : getDestinos()) {&#xD;
+			if (d.getId_destino() == destino.getId_destino()) {&#xD;
+				consulta = true;&#xD;
+			}&#xD;
+		}&#xD;
+&#xD;
+		if (consulta) {&#xD;
+&#xD;
+			String sql = &quot;UPDATE destinos SET destino = ?, data_ida = ?, horario_ida = ?, data_volta = ?, horario_volta = ?, cia_aerea = ?, hotel = ?, observacoes = ?, valor = ?&quot; + &quot; WHERE id_destino = ?&quot;;&#xD;
+&#xD;
+			try {&#xD;
+				// Cria uma conexão com o banco&#xD;
+				conn = Conexao.createConnectionToMySQL();&#xD;
+&#xD;
+				// Cria um PreparedStatment, classe usada para executar a query&#xD;
+				pstm = conn.prepareStatement(sql);&#xD;
+&#xD;
+				// Adiciona o valor do primeiro parâmetro da sql&#xD;
+				pstm.setString(1, destino.getDestino());&#xD;
+&#xD;
+				// Adiciona o valor do segundo parâmetro da sql&#xD;
+				pstm.setString(2, destino.getData_ida());&#xD;
+&#xD;
+				// Adiciona o valor do terceiro parâmetro da sql&#xD;
+				pstm.setString(3, destino.getHorario_ida());&#xD;
+&#xD;
+				// Adiciona o valor do quarto parâmetro da sql&#xD;
+				pstm.setString(4, destino.getData_volta());&#xD;
+&#xD;
+				// Adiciona o valor do quinto parâmetro da sql&#xD;
+				pstm.setString(5, destino.getHorario_volta());&#xD;
+&#xD;
+				// Adiciona o valor do sexto parâmetro da sql&#xD;
+				pstm.setString(6, destino.getCia_aerea());&#xD;
+&#xD;
+				// Adiciona o valor do sétimo parâmetro da sql&#xD;
+				pstm.setString(7, destino.getHotel());&#xD;
+&#xD;
+				// Adiciona o valor do oitavo parâmetro da sql&#xD;
+				pstm.setString(8, destino.getObservacoes());&#xD;
+&#xD;
+				// Adiciona o valor do nôno parâmetro da sql&#xD;
+				pstm.setDouble(9, destino.getValor());&#xD;
+&#xD;
+				// Adiciona o valor do décimo parâmetro da sql&#xD;
+				pstm.setInt(10, destino.getId_destino());&#xD;
+&#xD;
+				// Executa a sql para inserção dos dados&#xD;
+				pstm.execute();&#xD;
+&#xD;
+				System.out.println(&quot;Destino atualizado com sucesso!&quot;);&#xD;
+&#xD;
+			} catch (Exception e) {&#xD;
+				e.printStackTrace();&#xD;
+			} finally {&#xD;
+&#xD;
+				// Fecha as conexões&#xD;
+				try {&#xD;
+					if (pstm != null) {&#xD;
+						pstm.close();&#xD;
+					}&#xD;
+					if (conn != null) {&#xD;
+						conn.close();&#xD;
+					}&#xD;
+				} catch (Exception e) {&#xD;
+					e.printStackTrace();&#xD;
+				}&#xD;
+			}&#xD;
+		} else {&#xD;
+			System.out.println(&quot;ID nao encontrado no banco de dados!&quot;);&#xD;
+		}&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_yN1mICy8Ee2RXfJ-Z5pdBw" name="removeById" specification="_xkFegCy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_yN1mISy8Ee2RXfJ-Z5pdBw" name="id_destino">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>boolean consulta = false;&#xD;
+&#xD;
+		for (Destinos d : getDestinos()) {&#xD;
+			if (d.getId_destino() == id_destino) {&#xD;
+				consulta = true;&#xD;
+			}&#xD;
+		}&#xD;
+&#xD;
+		if (consulta) {&#xD;
+&#xD;
+			String sql = &quot;DELETE FROM destinos WHERE id_destino = ?&quot;;&#xD;
+&#xD;
+			try {&#xD;
+				conn = Conexao.createConnectionToMySQL(); // cria a conexao&#xD;
+&#xD;
+				pstm = conn.prepareStatement(sql); // passa comando sql para o objeto pstm&#xD;
+&#xD;
+				pstm.setInt(1, id_destino); // seta o id no comando sql&#xD;
+&#xD;
+				pstm.execute(); // executa o comando sql que está no objeto pstm&#xD;
+&#xD;
+				System.out.println(&quot;Destino excluido com sucesso!&quot;);&#xD;
+&#xD;
+			} catch (Exception e) {&#xD;
+				e.printStackTrace();&#xD;
+			} finally {&#xD;
+&#xD;
+				try {&#xD;
+					if (pstm != null) {&#xD;
+						pstm.close();&#xD;
+					}&#xD;
+					if (conn != null) {&#xD;
+						conn.close();&#xD;
+					}&#xD;
+				} catch (Exception e) {&#xD;
+					e.printStackTrace();&#xD;
+				}&#xD;
+			}&#xD;
+		} else {&#xD;
+			System.out.println(&quot;ID nao encontrado no banco de dados!&quot;);&#xD;
+		}&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_xj_X4Cy8Ee2RXfJ-Z5pdBw" name="getDestinos" method="_yNyi0Cy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_xkAmACy8Ee2RXfJ-Z5pdBw" type="_xjdzcCy8Ee2RXfJ-Z5pdBw" isOrdered="true" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xkB0ICy8Ee2RXfJ-Z5pdBw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xkFegCy8Ee2RXfJ-Z5pdBw" name="removeById" method="_yN1mICy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_xkFegSy8Ee2RXfJ-Z5pdBw" name="id_destino">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_yJYj8Cy8Ee2RXfJ-Z5pdBw" name="save" method="_yNwtoCy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_yJYj8Sy8Ee2RXfJ-Z5pdBw" name="destino" type="_xjdzcCy8Ee2RXfJ-Z5pdBw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_yJbnQCy8Ee2RXfJ-Z5pdBw" name="update" method="_yN0YACy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_yJcOUCy8Ee2RXfJ-Z5pdBw" name="destino" type="_xjdzcCy8Ee2RXfJ-Z5pdBw"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xkV9MCy8Ee2RXfJ-Z5pdBw" name="AdministradoresDAO">
+      <ownedAttribute xmi:id="_yMI9ACy8Ee2RXfJ-Z5pdBw" name="conn" visibility="package" type="_yImg0Cy8Ee2RXfJ-Z5pdBw" association="_yOyBUCy8Ee2RXfJ-Z5pdBw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_yMKLICy8Ee2RXfJ-Z5pdBw" value="null"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yMMnYCy8Ee2RXfJ-Z5pdBw" name="pstm" visibility="package" type="_yI6C0Cy8Ee2RXfJ-Z5pdBw" association="_yO5WECy8Ee2RXfJ-Z5pdBw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_yMN1gCy8Ee2RXfJ-Z5pdBw" value="null"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_yN20QCy8Ee2RXfJ-Z5pdBw" name="save" specification="_yJlYQCy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_yN20QSy8Ee2RXfJ-Z5pdBw" name="administrador" type="_xk6k8Cy8Ee2RXfJ-Z5pdBw"/>
+        <language>java</language>
+        <body>// Os ? são os parâmetros que nós vamos adicionar na base de dados&#xD;
+&#xD;
+		String sql = &quot;INSERT INTO administradores(nome,email,senha,id_permissao)&quot; + &quot; VALUES(?,?,?,?)&quot;;&#xD;
+&#xD;
+		try {&#xD;
+			// Cria uma conexão com o banco&#xD;
+			conn = Conexao.createConnectionToMySQL();&#xD;
+&#xD;
+			// Cria um PreparedStatment, classe usada para executar a query&#xD;
+			pstm = conn.prepareStatement(sql);&#xD;
+&#xD;
+			// Adiciona o valor do primeiro parâmetro da sql&#xD;
+			pstm.setString(1, administrador.getNome());&#xD;
+&#xD;
+			// Adiciona o valor do segundo parâmetro da sql&#xD;
+			pstm.setString(2, administrador.getEmail());&#xD;
+&#xD;
+			// Adiciona o valor do terceiro parâmetro da sql&#xD;
+			pstm.setString(3, administrador.getSenha());&#xD;
+&#xD;
+			// Adiciona o valor do quarto parâmetro da sql&#xD;
+			pstm.setInt(4, administrador.getId_permissao());&#xD;
+			&#xD;
+			// Executa a sql para inserção dos dados&#xD;
+			pstm.execute();&#xD;
+&#xD;
+			System.out.println(&quot;Administrador adicionado com sucesso!&quot;);&#xD;
+		} catch (Exception e) {&#xD;
+			System.out.println(&quot;ID de permissao nao encontrado no banco de dados ou caractere invalido!&quot;);&#xD;
+		} finally {&#xD;
+&#xD;
+			// Fecha as conexões&#xD;
+			try {&#xD;
+				if (pstm != null) {&#xD;
+					pstm.close();&#xD;
+				}&#xD;
+				if (conn != null) {&#xD;
+					conn.close();&#xD;
+				}&#xD;
+			} catch (Exception e) {&#xD;
+				e.printStackTrace();&#xD;
+			}&#xD;
+		}&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_yN4pcCy8Ee2RXfJ-Z5pdBw" name="getAdministradores" specification="_xkegECy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_yN4pcSy8Ee2RXfJ-Z5pdBw" type="_xk6k8Cy8Ee2RXfJ-Z5pdBw" isOrdered="true" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yN4pciy8Ee2RXfJ-Z5pdBw" value="*"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>String sql = &quot;SELECT * FROM administradores&quot;;&#xD;
+&#xD;
+		List&lt;Administradores> administradores = new ArrayList&lt;Administradores>();&#xD;
+&#xD;
+		// Classe que vai recuperar os dados do banco de dados&#xD;
+		ResultSet rset = null;&#xD;
+&#xD;
+		try {&#xD;
+			conn = Conexao.createConnectionToMySQL();&#xD;
+&#xD;
+			pstm = conn.prepareStatement(sql);&#xD;
+&#xD;
+			rset = pstm.executeQuery();&#xD;
+&#xD;
+			// Enquanto existir dados no banco de dados, faça&#xD;
+			while (rset.next()) {&#xD;
+&#xD;
+				Administradores administrador = new Administradores();&#xD;
+&#xD;
+				// Recupera o id no banco e atribui ele ao objeto&#xD;
+				administrador.setId_admin(rset.getInt(&quot;id_admin&quot;));&#xD;
+&#xD;
+				// Recupera o id da permissão no banco e atribui ele ao objeto&#xD;
+				administrador.setId_permissao(rset.getInt(&quot;id_permissao&quot;));&#xD;
+&#xD;
+				// Recupera o nome no banco e atribui ele ao objeto&#xD;
+				administrador.setNome(rset.getString(&quot;nome&quot;));&#xD;
+&#xD;
+				// Recupera o e-mail no banco e atribui ele ao objeto&#xD;
+				administrador.setEmail(rset.getString(&quot;email&quot;));&#xD;
+&#xD;
+				// Recupera a senha no banco e atribui ela ao objeto&#xD;
+				administrador.setSenha(rset.getString(&quot;senha&quot;));&#xD;
+&#xD;
+				// Adiciona o administrador recuperado a lista de administradores&#xD;
+				administradores.add(administrador);&#xD;
+			}&#xD;
+		} catch (Exception e) {&#xD;
+			e.printStackTrace();&#xD;
+		} finally {&#xD;
+			try {&#xD;
+				if (rset != null) {&#xD;
+					rset.close();&#xD;
+				}&#xD;
+				if (pstm != null) {&#xD;
+					pstm.close();&#xD;
+				}&#xD;
+				if (conn != null) {&#xD;
+					conn.close();&#xD;
+				}&#xD;
+			} catch (Exception e) {&#xD;
+				e.printStackTrace();&#xD;
+			}&#xD;
+		}&#xD;
+		if (administradores.size() == 0) {&#xD;
+			System.out.println(&quot;Nao ha administradores cadastrados no banco de dados!&quot;);&#xD;
+		}&#xD;
+		return administradores;&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_yN53kCy8Ee2RXfJ-Z5pdBw" name="update" specification="_yJn0gCy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_yN53kSy8Ee2RXfJ-Z5pdBw" name="administrador" type="_xk6k8Cy8Ee2RXfJ-Z5pdBw"/>
+        <language>java</language>
+        <body>boolean consulta = false;&#xD;
+&#xD;
+		for (Administradores a : getAdministradores()) {&#xD;
+			if (a.getId_admin() == administrador.getId_admin()) {&#xD;
+				consulta = true;&#xD;
+			}&#xD;
+		}&#xD;
+&#xD;
+		if (consulta) {&#xD;
+&#xD;
+			String sql = &quot;UPDATE administradores SET nome = ?, email = ?, senha = ?&quot; + &quot; WHERE id_admin = ?&quot;;&#xD;
+&#xD;
+			try {&#xD;
+				// Cria uma conexão com o banco&#xD;
+				conn = Conexao.createConnectionToMySQL();&#xD;
+&#xD;
+				// Cria um PreparedStatment, classe usada para executar a query&#xD;
+				pstm = conn.prepareStatement(sql);&#xD;
+&#xD;
+				// Adiciona o valor do primeiro parâmetro da sql&#xD;
+				pstm.setString(1, administrador.getNome());&#xD;
+&#xD;
+				// Adiciona o valor do segundo parâmetro da sql&#xD;
+				pstm.setString(2, administrador.getEmail());&#xD;
+&#xD;
+				// Adiciona o valor do terceiro parâmetro da sql&#xD;
+				pstm.setString(3, administrador.getSenha());&#xD;
+&#xD;
+				// Adiciona o valor do quarto parâmetro da sql&#xD;
+				pstm.setInt(4, administrador.getId_admin());&#xD;
+&#xD;
+				// Executa a sql para inserção dos dados&#xD;
+				pstm.execute();&#xD;
+&#xD;
+				System.out.println(&quot;Administrador atualizado com sucesso!&quot;);&#xD;
+&#xD;
+			} catch (Exception e) {&#xD;
+				e.printStackTrace();&#xD;
+			} finally {&#xD;
+&#xD;
+				// Fecha as conexões&#xD;
+				try {&#xD;
+					if (pstm != null) {&#xD;
+						pstm.close();&#xD;
+					}&#xD;
+					if (conn != null) {&#xD;
+						conn.close();&#xD;
+					}&#xD;
+				} catch (Exception e) {&#xD;
+					e.printStackTrace();&#xD;
+				}&#xD;
+			}&#xD;
+		} else {&#xD;
+			System.out.println(&quot;ID nao encontrado no banco de dados!&quot;);&#xD;
+		}&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_yN6eoCy8Ee2RXfJ-Z5pdBw" name="removeById" specification="_xkl00Cy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_yN6eoSy8Ee2RXfJ-Z5pdBw" name="id_admin">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>boolean consulta = false;&#xD;
+&#xD;
+		for (Administradores a : getAdministradores()) {&#xD;
+			if (a.getId_admin() == id_admin) {&#xD;
+				consulta = true;&#xD;
+			}&#xD;
+		}&#xD;
+&#xD;
+		if (consulta) {&#xD;
+&#xD;
+			String sql = &quot;DELETE FROM administradores WHERE id_admin = ?&quot;;&#xD;
+&#xD;
+			try {&#xD;
+				conn = Conexao.createConnectionToMySQL(); // cria a conexao&#xD;
+&#xD;
+				pstm = conn.prepareStatement(sql); // passa comando sql para o objeto pstm&#xD;
+&#xD;
+				pstm.setInt(1, id_admin); // seta o id no comando sql&#xD;
+&#xD;
+				pstm.execute(); // executa o comando sql que está no objeto pstm&#xD;
+&#xD;
+				System.out.println(&quot;Administrador excluido com sucesso!&quot;);&#xD;
+&#xD;
+			} catch (Exception e) {&#xD;
+				e.printStackTrace();&#xD;
+			} finally {&#xD;
+&#xD;
+				try {&#xD;
+					if (pstm != null) {&#xD;
+						pstm.close();&#xD;
+					}&#xD;
+					if (conn != null) {&#xD;
+						conn.close();&#xD;
+					}&#xD;
+				} catch (Exception e) {&#xD;
+					e.printStackTrace();&#xD;
+				}&#xD;
+			}&#xD;
+		} else {&#xD;
+			System.out.println(&quot;ID nao encontrado no banco de dados!&quot;);&#xD;
+		}&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_xkegECy8Ee2RXfJ-Z5pdBw" name="getAdministradores" method="_yN4pcCy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_xkgVQCy8Ee2RXfJ-Z5pdBw" type="_xk6k8Cy8Ee2RXfJ-Z5pdBw" isOrdered="true" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xkg8UCy8Ee2RXfJ-Z5pdBw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xkl00Cy8Ee2RXfJ-Z5pdBw" name="removeById" method="_yN6eoCy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_xkl00Sy8Ee2RXfJ-Z5pdBw" name="id_admin">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_yJlYQCy8Ee2RXfJ-Z5pdBw" name="save" method="_yN20QCy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_yJl_UCy8Ee2RXfJ-Z5pdBw" name="administrador" type="_xk6k8Cy8Ee2RXfJ-Z5pdBw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_yJn0gCy8Ee2RXfJ-Z5pdBw" name="update" method="_yN53kCy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_yJobkCy8Ee2RXfJ-Z5pdBw" name="administrador" type="_xk6k8Cy8Ee2RXfJ-Z5pdBw"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xk6k8Cy8Ee2RXfJ-Z5pdBw" name="Administradores">
+      <ownedAttribute xmi:id="_yMSuACy8Ee2RXfJ-Z5pdBw" name="id_admin" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yMVKQCy8Ee2RXfJ-Z5pdBw" name="id_permissao" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yMW_cCy8Ee2RXfJ-Z5pdBw" name="nome" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yMYNkCy8Ee2RXfJ-Z5pdBw" name="email" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yMZbsCy8Ee2RXfJ-Z5pdBw" name="senha" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xlLDoCy8Ee2RXfJ-Z5pdBw" name="PermissoesDAO">
+      <ownedAttribute xmi:id="_yMcfACy8Ee2RXfJ-Z5pdBw" name="conn" visibility="package" type="_yImg0Cy8Ee2RXfJ-Z5pdBw" association="_yPBR4Cy8Ee2RXfJ-Z5pdBw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_yMdGECy8Ee2RXfJ-Z5pdBw" value="null"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yMgJYCy8Ee2RXfJ-Z5pdBw" name="pstm" visibility="package" type="_yI6C0Cy8Ee2RXfJ-Z5pdBw" association="_yPImoCy8Ee2RXfJ-Z5pdBw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_yMgwcCy8Ee2RXfJ-Z5pdBw" value="null"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_yN8T0Cy8Ee2RXfJ-Z5pdBw" name="save" specification="_yJxlgCy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_yN8T0Sy8Ee2RXfJ-Z5pdBw" name="permissao" type="_xifjECy8Ee2RXfJ-Z5pdBw"/>
+        <language>java</language>
+        <body>// Os ? são os parâmetros que nós vamos adicionar na base de dados&#xD;
+&#xD;
+		String sql = &quot;INSERT INTO permissoes(tipo)&quot; + &quot; VALUES(?)&quot;;&#xD;
+&#xD;
+		try {&#xD;
+			// Cria uma conexão com o banco&#xD;
+			conn = Conexao.createConnectionToMySQL();&#xD;
+&#xD;
+			// Cria um PreparedStatment, classe usada para executar a query&#xD;
+			pstm = conn.prepareStatement(sql);&#xD;
+&#xD;
+			// Adiciona o valor do primeiro parâmetro da sql&#xD;
+			pstm.setString(1, permissao.getTipo());&#xD;
+&#xD;
+			// Executa a sql para inserção dos dados&#xD;
+			pstm.execute();&#xD;
+&#xD;
+		} catch (Exception e) {&#xD;
+			e.printStackTrace();&#xD;
+		} finally {&#xD;
+&#xD;
+			// Fecha as conexões&#xD;
+			try {&#xD;
+				if (pstm != null) {&#xD;
+					pstm.close();&#xD;
+				}&#xD;
+				if (conn != null) {&#xD;
+					conn.close();&#xD;
+				}&#xD;
+			} catch (Exception e) {&#xD;
+				e.printStackTrace();&#xD;
+			}&#xD;
+		}&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_yN9h8Cy8Ee2RXfJ-Z5pdBw" name="getPermissoes" specification="_xlQjMCy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_yN9h8Sy8Ee2RXfJ-Z5pdBw" type="_xifjECy8Ee2RXfJ-Z5pdBw" isOrdered="true" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yN9h8iy8Ee2RXfJ-Z5pdBw" value="*"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>String sql = &quot;SELECT * FROM permissoes&quot;;&#xD;
+&#xD;
+		List&lt;Permissoes> permissoes = new ArrayList&lt;Permissoes>();&#xD;
+&#xD;
+		// Classe que vai recuperar os dados do banco de dados&#xD;
+		ResultSet rset = null;&#xD;
+&#xD;
+		try {&#xD;
+			conn = Conexao.createConnectionToMySQL();&#xD;
+&#xD;
+			pstm = conn.prepareStatement(sql);&#xD;
+&#xD;
+			rset = pstm.executeQuery();&#xD;
+&#xD;
+			// Enquanto existir dados no banco de dados, faça&#xD;
+			while (rset.next()) {&#xD;
+&#xD;
+				Permissoes permissao = new Permissoes();&#xD;
+&#xD;
+				// Recupera o id no banco e atribui ele ao objeto&#xD;
+				permissao.setId_permissao(rset.getInt(&quot;id_permissao&quot;));&#xD;
+&#xD;
+				// Recupera o tipo no banco e atribui ele ao objeto&#xD;
+				permissao.setTipo(rset.getString(&quot;tipo&quot;));&#xD;
+&#xD;
+				// Adiciona a permissão recuperada a lista de permissões&#xD;
+				permissoes.add(permissao);&#xD;
+			}&#xD;
+		} catch (Exception e) {&#xD;
+			e.printStackTrace();&#xD;
+		} finally {&#xD;
+			try {&#xD;
+				if (rset != null) {&#xD;
+					rset.close();&#xD;
+				}&#xD;
+				if (pstm != null) {&#xD;
+					pstm.close();&#xD;
+				}&#xD;
+				if (conn != null) {&#xD;
+					conn.close();&#xD;
+				}&#xD;
+			} catch (Exception e) {&#xD;
+				e.printStackTrace();&#xD;
+			}&#xD;
+		}&#xD;
+		if (permissoes.size() == 0) {&#xD;
+			System.out.println(&quot;Nao ha permissoes cadastradas no banco de dados!&quot;);&#xD;
+		}&#xD;
+		return permissoes;&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_yN-wECy8Ee2RXfJ-Z5pdBw" name="update" specification="_yJ0BwCy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_yN-wESy8Ee2RXfJ-Z5pdBw" name="permissao" type="_xifjECy8Ee2RXfJ-Z5pdBw"/>
+        <language>java</language>
+        <body>boolean consulta = false;&#xD;
+&#xD;
+		for (Permissoes p : getPermissoes()) {&#xD;
+			if (p.getId_permissao() == permissao.getId_permissao()) {&#xD;
+				consulta = true;&#xD;
+			}&#xD;
+		}&#xD;
+&#xD;
+		if (consulta) {&#xD;
+&#xD;
+			String sql = &quot;UPDATE permissoes SET tipo = ?&quot; + &quot; WHERE id_permissao = ?&quot;;&#xD;
+&#xD;
+			try {&#xD;
+				// Cria uma conexão com o banco&#xD;
+				conn = Conexao.createConnectionToMySQL();&#xD;
+&#xD;
+				// Cria um PreparedStatment, classe usada para executar a query&#xD;
+				pstm = conn.prepareStatement(sql);&#xD;
+&#xD;
+				// Adiciona o valor do primeiro parâmetro da sql&#xD;
+				pstm.setString(1, permissao.getTipo());&#xD;
+&#xD;
+				// Adiciona o valor do segundo parâmetro da sql&#xD;
+				pstm.setInt(2, permissao.getId_permissao());&#xD;
+&#xD;
+				// Executa a sql para inserção dos dados&#xD;
+				pstm.execute();&#xD;
+&#xD;
+				System.out.println(&quot;Permissao atualizada com sucesso!&quot;);&#xD;
+&#xD;
+			} catch (Exception e) {&#xD;
+				e.printStackTrace();&#xD;
+			} finally {&#xD;
+&#xD;
+				// Fecha as conexões&#xD;
+				try {&#xD;
+					if (pstm != null) {&#xD;
+						pstm.close();&#xD;
+					}&#xD;
+					if (conn != null) {&#xD;
+						conn.close();&#xD;
+					}&#xD;
+				} catch (Exception e) {&#xD;
+					e.printStackTrace();&#xD;
+				}&#xD;
+			}&#xD;
+		} else {&#xD;
+			System.out.println(&quot;ID nao encontrado no banco de dados!&quot;);&#xD;
+		}&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_yN_-MCy8Ee2RXfJ-Z5pdBw" name="removeById" specification="_xlXQ4Cy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_yN_-MSy8Ee2RXfJ-Z5pdBw" name="id_permissao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>boolean consulta = false;&#xD;
+&#xD;
+		for (Permissoes p : getPermissoes()) {&#xD;
+			if (p.getId_permissao() == id_permissao) {&#xD;
+				consulta = true;&#xD;
+			}&#xD;
+		}&#xD;
+&#xD;
+		if (consulta) {&#xD;
+&#xD;
+			String sql = &quot;DELETE FROM permissoes WHERE id_permissao = ?&quot;;&#xD;
+&#xD;
+			try {&#xD;
+				conn = Conexao.createConnectionToMySQL(); // cria a conexao&#xD;
+&#xD;
+				pstm = conn.prepareStatement(sql); // passa comando sql para o objeto pstm&#xD;
+&#xD;
+				pstm.setInt(1, id_permissao); // seta o id no comando sql&#xD;
+&#xD;
+				pstm.execute(); // executa o comando sql que está no objeto pstm&#xD;
+&#xD;
+				System.out.println(&quot;Permissao excluida com sucesso!&quot;);&#xD;
+&#xD;
+			} catch (Exception e) {&#xD;
+				e.printStackTrace();&#xD;
+			} finally {&#xD;
+&#xD;
+				try {&#xD;
+					if (pstm != null) {&#xD;
+						pstm.close();&#xD;
+					}&#xD;
+					if (conn != null) {&#xD;
+						conn.close();&#xD;
+					}&#xD;
+				} catch (Exception e) {&#xD;
+					e.printStackTrace();&#xD;
+				}&#xD;
+			}&#xD;
+		} else {&#xD;
+			System.out.println(&quot;ID nao encontrado no banco de dados!&quot;);&#xD;
+		}&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_xlQjMCy8Ee2RXfJ-Z5pdBw" name="getPermissoes" method="_yN9h8Cy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_xlRxUCy8Ee2RXfJ-Z5pdBw" type="_xifjECy8Ee2RXfJ-Z5pdBw" isOrdered="true" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xlSYYCy8Ee2RXfJ-Z5pdBw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xlXQ4Cy8Ee2RXfJ-Z5pdBw" name="removeById" method="_yN_-MCy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_xlX38Cy8Ee2RXfJ-Z5pdBw" name="id_permissao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_yJxlgCy8Ee2RXfJ-Z5pdBw" name="save" method="_yN8T0Cy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_yJyMkCy8Ee2RXfJ-Z5pdBw" name="permissao" type="_xifjECy8Ee2RXfJ-Z5pdBw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_yJ0BwCy8Ee2RXfJ-Z5pdBw" name="update" method="_yN-wECy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_yJ0o0Cy8Ee2RXfJ-Z5pdBw" name="permissao" type="_xifjECy8Ee2RXfJ-Z5pdBw"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xlrZ8Cy8Ee2RXfJ-Z5pdBw" name="Promocoes">
+      <ownedAttribute xmi:id="_yMm3ECy8Ee2RXfJ-Z5pdBw" name="id_promocao" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yMoFMCy8Ee2RXfJ-Z5pdBw" name="id_admin" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yMp6YCy8Ee2RXfJ-Z5pdBw" name="destino" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yMrvkCy8Ee2RXfJ-Z5pdBw" name="data_ida" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yMtkwCy8Ee2RXfJ-Z5pdBw" name="horario_ida" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yMvZ8Cy8Ee2RXfJ-Z5pdBw" name="data_volta" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yMwoECy8Ee2RXfJ-Z5pdBw" name="horario_volta" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yMydQCy8Ee2RXfJ-Z5pdBw" name="cia_aerea" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yM0ScCy8Ee2RXfJ-Z5pdBw" name="hotel" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yM1gkCy8Ee2RXfJ-Z5pdBw" name="observacoes" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yM2usCy8Ee2RXfJ-Z5pdBw" name="valor" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yM380Cy8Ee2RXfJ-Z5pdBw" name="valor_promocional" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xmFpoCy8Ee2RXfJ-Z5pdBw" name="PromocoesDAO">
+      <ownedAttribute xmi:id="_yM7AICy8Ee2RXfJ-Z5pdBw" name="conn" visibility="package" type="_yImg0Cy8Ee2RXfJ-Z5pdBw" association="_yPPUUSy8Ee2RXfJ-Z5pdBw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_yM7nMCy8Ee2RXfJ-Z5pdBw" value="null"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yM-qgCy8Ee2RXfJ-Z5pdBw" name="pstm" visibility="package" type="_yI6C0Cy8Ee2RXfJ-Z5pdBw" association="_yPw4wCy8Ee2RXfJ-Z5pdBw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_yM_4oCy8Ee2RXfJ-Z5pdBw" value="null"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_yOBzYCy8Ee2RXfJ-Z5pdBw" name="save" specification="_yJ-Z0Cy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_yOBzYSy8Ee2RXfJ-Z5pdBw" name="promocao" type="_xlrZ8Cy8Ee2RXfJ-Z5pdBw"/>
+        <language>java</language>
+        <body>// Os ? são os parâmetros que nós vamos adicionar na base de dados&#xD;
+&#xD;
+		String sql = &quot;INSERT INTO promocoes(destino,data_ida,horario_ida,data_volta,horario_volta,cia_aerea,hotel,observacoes,valor,valor_promocional,id_admin)&quot; + &quot; VALUES(?,?,?,?,?,?,?,?,?,?,?)&quot;;&#xD;
+&#xD;
+		try {&#xD;
+			// Cria uma conexão com o banco&#xD;
+			conn = Conexao.createConnectionToMySQL();&#xD;
+&#xD;
+			// Cria um PreparedStatment, classe usada para executar a query&#xD;
+			pstm = conn.prepareStatement(sql);&#xD;
+&#xD;
+			// Adiciona o valor do primeiro parâmetro da sql&#xD;
+			pstm.setString(1, promocao.getDestino());&#xD;
+&#xD;
+			// Adiciona o valor do segundo parâmetro da sql&#xD;
+			pstm.setString(2, promocao.getData_ida());&#xD;
+&#xD;
+			// Adiciona o valor do terceiro parâmetro da sql&#xD;
+			pstm.setString(3, promocao.getHorario_ida());&#xD;
+&#xD;
+			// Adiciona o valor do quarto parâmetro da sql&#xD;
+			pstm.setString(4, promocao.getData_volta());&#xD;
+&#xD;
+			// Adiciona o valor do quinto parâmetro da sql&#xD;
+			pstm.setString(5, promocao.getHorario_volta());&#xD;
+&#xD;
+			// Adiciona o valor do sexto parâmetro da sql&#xD;
+			pstm.setString(6, promocao.getCia_aerea());&#xD;
+&#xD;
+			// Adiciona o valor do sétimo parâmetro da sql&#xD;
+			pstm.setString(7, promocao.getHotel());&#xD;
+&#xD;
+			// Adiciona o valor do oitavo parâmetro da sql&#xD;
+			pstm.setString(8, promocao.getObservacoes());&#xD;
+&#xD;
+			// Adiciona o valor do nôno parâmetro da sql&#xD;
+			pstm.setDouble(9, promocao.getValor());&#xD;
+&#xD;
+			// Adiciona o valor do décimo parâmetro da sql&#xD;
+			pstm.setDouble(10, promocao.getValor_promocional());&#xD;
+&#xD;
+			// Adiciona o valor do décimo primeiro parâmetro da sql&#xD;
+			pstm.setInt(11, promocao.getId_admin());&#xD;
+			&#xD;
+			// Executa a sql para inserção dos dados&#xD;
+			pstm.execute();&#xD;
+&#xD;
+			System.out.println(&quot;Pacote promocional adicionado com sucesso!&quot;);&#xD;
+		} catch (Exception e) {&#xD;
+			System.out.println(&quot;ID DE ADMINISTRADOR nao encontrado no banco de dados ou caractere invalido!&quot;);&#xD;
+		} finally {&#xD;
+&#xD;
+			// Fecha as conexões&#xD;
+			try {&#xD;
+				if (pstm != null) {&#xD;
+					pstm.close();&#xD;
+				}&#xD;
+				if (conn != null) {&#xD;
+					conn.close();&#xD;
+				}&#xD;
+			} catch (Exception e) {&#xD;
+				e.printStackTrace();&#xD;
+			}&#xD;
+		}&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_yODBgCy8Ee2RXfJ-Z5pdBw" name="getPromocoes" specification="_xmLwQCy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_yODBgSy8Ee2RXfJ-Z5pdBw" type="_xlrZ8Cy8Ee2RXfJ-Z5pdBw" isOrdered="true" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yODBgiy8Ee2RXfJ-Z5pdBw" value="*"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>String sql = &quot;SELECT * FROM promocoes&quot;;&#xD;
+&#xD;
+		List&lt;Promocoes> promocoes = new ArrayList&lt;Promocoes>();&#xD;
+&#xD;
+		// Classe que vai recuperar os dados do banco de dados&#xD;
+		ResultSet rset = null;&#xD;
+&#xD;
+		try {&#xD;
+			conn = Conexao.createConnectionToMySQL();&#xD;
+&#xD;
+			pstm = conn.prepareStatement(sql);&#xD;
+&#xD;
+			rset = pstm.executeQuery();&#xD;
+&#xD;
+			// Enquanto existir dados no banco de dados, faça&#xD;
+			while (rset.next()) {&#xD;
+&#xD;
+				Promocoes promocao = new Promocoes();&#xD;
+&#xD;
+				// Recupera o id no banco e atribui ele ao objeto&#xD;
+				promocao.setId_promocao(rset.getInt(&quot;id_promocao&quot;));&#xD;
+&#xD;
+				// Recupera o id do administrador no banco e atribui ele ao objeto&#xD;
+				promocao.setId_admin(rset.getInt(&quot;id_admin&quot;));&#xD;
+&#xD;
+				// Recupera o destino no banco e atribui ele ao objeto&#xD;
+				promocao.setDestino(rset.getString(&quot;destino&quot;));&#xD;
+&#xD;
+				// Recupera a data de ida no banco e atribui ela ao objeto&#xD;
+				promocao.setData_ida(rset.getString(&quot;data_ida&quot;));&#xD;
+&#xD;
+				// Recupera o horário de ida no banco e atribui ele ao objeto&#xD;
+				promocao.setHorario_ida(rset.getString(&quot;horario_ida&quot;));&#xD;
+&#xD;
+				// Recupera a data de volta no banco e atribui ela ao objeto&#xD;
+				promocao.setData_volta(rset.getString(&quot;data_volta&quot;));&#xD;
+&#xD;
+				// Recupera o horário de volta no banco e atribui ele ao objeto&#xD;
+				promocao.setHorario_volta(rset.getString(&quot;horario_volta&quot;));&#xD;
+&#xD;
+				// Recupera a cia aérea no banco e atribui ela ao objeto&#xD;
+				promocao.setCia_aerea(rset.getString(&quot;cia_aerea&quot;));&#xD;
+&#xD;
+				// Recupera o hotel no banco e atribui ele ao objeto&#xD;
+				promocao.setHotel(rset.getString(&quot;hotel&quot;));&#xD;
+&#xD;
+				// Recupera as observações no banco e atribui elas ao objeto&#xD;
+				promocao.setObservacoes(rset.getString(&quot;observacoes&quot;));&#xD;
+				&#xD;
+				// Recupera o valor no banco e atribui ele ao objeto&#xD;
+				promocao.setValor(rset.getDouble(&quot;valor&quot;));&#xD;
+&#xD;
+				// Recupera o valor promocional no banco e atribui ele ao objeto&#xD;
+				promocao.setValor_promocional(rset.getDouble(&quot;valor_promocional&quot;));&#xD;
+&#xD;
+				// Adiciona o pacote promocional recuperado a lista de promoções&#xD;
+				promocoes.add(promocao);&#xD;
+			}&#xD;
+		} catch (Exception e) {&#xD;
+			e.printStackTrace();&#xD;
+		} finally {&#xD;
+			try {&#xD;
+				if (rset != null) {&#xD;
+					rset.close();&#xD;
+				}&#xD;
+				if (pstm != null) {&#xD;
+					pstm.close();&#xD;
+				}&#xD;
+				if (conn != null) {&#xD;
+					conn.close();&#xD;
+				}&#xD;
+			} catch (Exception e) {&#xD;
+				e.printStackTrace();&#xD;
+			}&#xD;
+		}&#xD;
+		if (promocoes.size() == 0) {&#xD;
+			System.out.println(&quot;Nao ha promocoes cadastradas no banco de dados!&quot;);&#xD;
+		}&#xD;
+		return promocoes;&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_yOEPoCy8Ee2RXfJ-Z5pdBw" name="update" specification="_yKA2ECy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_yOEPoSy8Ee2RXfJ-Z5pdBw" name="promocao" type="_xlrZ8Cy8Ee2RXfJ-Z5pdBw"/>
+        <language>java</language>
+        <body>boolean consulta = false;&#xD;
+&#xD;
+		for (Promocoes p : getPromocoes()) {&#xD;
+			if (p.getId_promocao() == promocao.getId_promocao()) {&#xD;
+				consulta = true;&#xD;
+			}&#xD;
+		}&#xD;
+&#xD;
+		if (consulta) {&#xD;
+&#xD;
+			String sql = &quot;UPDATE promocoes SET destino = ?, data_ida = ?, horario_ida = ?, data_volta = ?, horario_volta = ?, cia_aerea = ?, hotel = ?, observacoes = ?, valor = ?, valor_promocional = ?&quot; + &quot; WHERE id_promocao = ?&quot;;&#xD;
+&#xD;
+			try {&#xD;
+				// Cria uma conexão com o banco&#xD;
+				conn = Conexao.createConnectionToMySQL();&#xD;
+&#xD;
+				// Cria um PreparedStatment, classe usada para executar a query&#xD;
+				pstm = conn.prepareStatement(sql);&#xD;
+&#xD;
+				// Adiciona o valor do primeiro parâmetro da sql&#xD;
+				pstm.setString(1, promocao.getDestino());&#xD;
+&#xD;
+				// Adiciona o valor do segundo parâmetro da sql&#xD;
+				pstm.setString(2, promocao.getData_ida());&#xD;
+&#xD;
+				// Adiciona o valor do terceiro parâmetro da sql&#xD;
+				pstm.setString(3, promocao.getHorario_ida());&#xD;
+&#xD;
+				// Adiciona o valor do quarto parâmetro da sql&#xD;
+				pstm.setString(4, promocao.getData_volta());&#xD;
+&#xD;
+				// Adiciona o valor do quinto parâmetro da sql&#xD;
+				pstm.setString(5, promocao.getHorario_volta());&#xD;
+&#xD;
+				// Adiciona o valor do sexto parâmetro da sql&#xD;
+				pstm.setString(6, promocao.getCia_aerea());&#xD;
+&#xD;
+				// Adiciona o valor do sétimo parâmetro da sql&#xD;
+				pstm.setString(7, promocao.getHotel());&#xD;
+&#xD;
+				// Adiciona o valor do oitavo parâmetro da sql&#xD;
+				pstm.setString(8, promocao.getObservacoes());&#xD;
+&#xD;
+				// Adiciona o valor do nôno parâmetro da sql&#xD;
+				pstm.setDouble(9, promocao.getValor());&#xD;
+&#xD;
+				// Adiciona o valor do décimo parâmetro da sql&#xD;
+				pstm.setDouble(10, promocao.getValor_promocional());&#xD;
+&#xD;
+				// Adiciona o valor do décimo primeiro parâmetro da sql&#xD;
+				pstm.setInt(11, promocao.getId_promocao());&#xD;
+&#xD;
+				// Executa a sql para inserção dos dados&#xD;
+				pstm.execute();&#xD;
+&#xD;
+				System.out.println(&quot;Pacote promocional atualizado com sucesso!&quot;);&#xD;
+&#xD;
+			} catch (Exception e) {&#xD;
+				e.printStackTrace();&#xD;
+			} finally {&#xD;
+&#xD;
+				// Fecha as conexões&#xD;
+				try {&#xD;
+					if (pstm != null) {&#xD;
+						pstm.close();&#xD;
+					}&#xD;
+					if (conn != null) {&#xD;
+						conn.close();&#xD;
+					}&#xD;
+				} catch (Exception e) {&#xD;
+					e.printStackTrace();&#xD;
+				}&#xD;
+			}&#xD;
+		} else {&#xD;
+			System.out.println(&quot;ID nao encontrado no banco de dados!&quot;);&#xD;
+		}&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_yOFdwCy8Ee2RXfJ-Z5pdBw" name="removeById" specification="_xmSd8Cy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_yOFdwSy8Ee2RXfJ-Z5pdBw" name="id_promocao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>boolean consulta = false;&#xD;
+&#xD;
+		for (Promocoes p : getPromocoes()) {&#xD;
+			if (p.getId_promocao() == id_promocao) {&#xD;
+				consulta = true;&#xD;
+			}&#xD;
+		}&#xD;
+&#xD;
+		if (consulta) {&#xD;
+&#xD;
+			String sql = &quot;DELETE FROM promocoes WHERE id_promocao = ?&quot;;&#xD;
+&#xD;
+			try {&#xD;
+				conn = Conexao.createConnectionToMySQL(); // cria a conexao&#xD;
+&#xD;
+				pstm = conn.prepareStatement(sql); // passa comando sql para o objeto pstm&#xD;
+&#xD;
+				pstm.setInt(1, id_promocao); // seta o id no comando sql&#xD;
+&#xD;
+				pstm.execute(); // executa o comando sql que está no objeto pstm&#xD;
+&#xD;
+				System.out.println(&quot;Promocao excluida com sucesso!&quot;);&#xD;
+&#xD;
+			} catch (Exception e) {&#xD;
+				e.printStackTrace();&#xD;
+			} finally {&#xD;
+&#xD;
+				try {&#xD;
+					if (pstm != null) {&#xD;
+						pstm.close();&#xD;
+					}&#xD;
+					if (conn != null) {&#xD;
+						conn.close();&#xD;
+					}&#xD;
+				} catch (Exception e) {&#xD;
+					e.printStackTrace();&#xD;
+				}&#xD;
+			}&#xD;
+		} else {&#xD;
+			System.out.println(&quot;ID nao encontrado no banco de dados!&quot;);&#xD;
+		}&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_xmLwQCy8Ee2RXfJ-Z5pdBw" name="getPromocoes" method="_yODBgCy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_xmM-YCy8Ee2RXfJ-Z5pdBw" type="_xlrZ8Cy8Ee2RXfJ-Z5pdBw" isOrdered="true" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xmNlcCy8Ee2RXfJ-Z5pdBw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xmSd8Cy8Ee2RXfJ-Z5pdBw" name="removeById" method="_yOFdwCy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_xmTsECy8Ee2RXfJ-Z5pdBw" name="id_promocao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_yJ-Z0Cy8Ee2RXfJ-Z5pdBw" name="save" method="_yOBzYCy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_yJ_A4Cy8Ee2RXfJ-Z5pdBw" name="promocao" type="_xlrZ8Cy8Ee2RXfJ-Z5pdBw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_yKA2ECy8Ee2RXfJ-Z5pdBw" name="update" method="_yOEPoCy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_yKBdICy8Ee2RXfJ-Z5pdBw" name="promocao" type="_xlrZ8Cy8Ee2RXfJ-Z5pdBw"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_yOcDECy8Ee2RXfJ-Z5pdBw" name="" memberEnd="_yOcDESy8Ee2RXfJ-Z5pdBw _yL_MACy8Ee2RXfJ-Z5pdBw">
+      <ownedEnd xmi:id="_yOcDESy8Ee2RXfJ-Z5pdBw" name="" type="_xj54UCy8Ee2RXfJ-Z5pdBw" association="_yOcDECy8Ee2RXfJ-Z5pdBw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_yOl0ECy8Ee2RXfJ-Z5pdBw" name="" memberEnd="_yOmbICy8Ee2RXfJ-Z5pdBw _yMDdcCy8Ee2RXfJ-Z5pdBw">
+      <ownedEnd xmi:id="_yOmbICy8Ee2RXfJ-Z5pdBw" name="" type="_xj54UCy8Ee2RXfJ-Z5pdBw" association="_yOl0ECy8Ee2RXfJ-Z5pdBw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_yOyBUCy8Ee2RXfJ-Z5pdBw" name="" memberEnd="_yOyoYCy8Ee2RXfJ-Z5pdBw _yMI9ACy8Ee2RXfJ-Z5pdBw">
+      <ownedEnd xmi:id="_yOyoYCy8Ee2RXfJ-Z5pdBw" name="" type="_xkV9MCy8Ee2RXfJ-Z5pdBw" association="_yOyBUCy8Ee2RXfJ-Z5pdBw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_yO5WECy8Ee2RXfJ-Z5pdBw" name="" memberEnd="_yO5WESy8Ee2RXfJ-Z5pdBw _yMMnYCy8Ee2RXfJ-Z5pdBw">
+      <ownedEnd xmi:id="_yO5WESy8Ee2RXfJ-Z5pdBw" name="" type="_xkV9MCy8Ee2RXfJ-Z5pdBw" association="_yO5WECy8Ee2RXfJ-Z5pdBw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_yPBR4Cy8Ee2RXfJ-Z5pdBw" name="" memberEnd="_yPBR4Sy8Ee2RXfJ-Z5pdBw _yMcfACy8Ee2RXfJ-Z5pdBw">
+      <ownedEnd xmi:id="_yPBR4Sy8Ee2RXfJ-Z5pdBw" name="" type="_xlLDoCy8Ee2RXfJ-Z5pdBw" association="_yPBR4Cy8Ee2RXfJ-Z5pdBw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_yPImoCy8Ee2RXfJ-Z5pdBw" name="" memberEnd="_yPImoSy8Ee2RXfJ-Z5pdBw _yMgJYCy8Ee2RXfJ-Z5pdBw">
+      <ownedEnd xmi:id="_yPImoSy8Ee2RXfJ-Z5pdBw" name="" type="_xlLDoCy8Ee2RXfJ-Z5pdBw" association="_yPImoCy8Ee2RXfJ-Z5pdBw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_yPPUUSy8Ee2RXfJ-Z5pdBw" name="" memberEnd="_yPP7YCy8Ee2RXfJ-Z5pdBw _yM7AICy8Ee2RXfJ-Z5pdBw">
+      <ownedEnd xmi:id="_yPP7YCy8Ee2RXfJ-Z5pdBw" name="" type="_xmFpoCy8Ee2RXfJ-Z5pdBw" association="_yPPUUSy8Ee2RXfJ-Z5pdBw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_yPw4wCy8Ee2RXfJ-Z5pdBw" name="" memberEnd="_yPw4wSy8Ee2RXfJ-Z5pdBw _yM-qgCy8Ee2RXfJ-Z5pdBw">
+      <ownedEnd xmi:id="_yPw4wSy8Ee2RXfJ-Z5pdBw" name="" type="_xmFpoCy8Ee2RXfJ-Z5pdBw" association="_yPw4wCy8Ee2RXfJ-Z5pdBw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_vroV0CzBEe2RXfJ-Z5pdBw" name="Conexao_1" visibility="public">
+      <ownedAttribute xmi:id="_vroV0SzBEe2RXfJ-Z5pdBw" name="id_permissao" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_vroV0yzBEe2RXfJ-Z5pdBw" name="PASSWORD" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_vroV1CzBEe2RXfJ-Z5pdBw" visibility="public" value="&quot;123456&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_vroV1SzBEe2RXfJ-Z5pdBw" name="DATABASE_URL" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_vroV1izBEe2RXfJ-Z5pdBw" visibility="public" value="&quot;jdbc:mysql://localhost:3306/borabora&quot;"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vroV1yzBEe2RXfJ-Z5pdBw" name="createConnectionToMySQL" visibility="public" specification="_vroV2SzBEe2RXfJ-Z5pdBw" isReentrant="true">
+        <ownedParameter xmi:id="_vroV2CzBEe2RXfJ-Z5pdBw" visibility="public" type="_yImg0Cy8Ee2RXfJ-Z5pdBw" direction="return" effect="create"/>
+        <language>java</language>
+        <body>// Cria a conexão com o banco de dados&#xD;
+		Connection connection = DriverManager.getConnection(DATABASE_URL, USERNAME, PASSWORD);&#xD;
+&#xD;
+		return connection;&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_vroV2SzBEe2RXfJ-Z5pdBw" name="createConnectionToMySQL" visibility="public" isStatic="true" method="_vroV1yzBEe2RXfJ-Z5pdBw" raisedException="_yKaesCy8Ee2RXfJ-Z5pdBw">
+        <ownedParameter xmi:id="_vroV2izBEe2RXfJ-Z5pdBw" visibility="public" type="_yImg0Cy8Ee2RXfJ-Z5pdBw" direction="return" effect="create"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_9c000CzBEe2RXfJ-Z5pdBw" name="getId_permissao"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_21ab8CzBEe2RXfJ-Z5pdBw" name="PrimitiveTypes::int"/>
+    <profileApplication xmi:id="_wu0qcCy8Ee2RXfJ-Z5pdBw">
+      <eAnnotations xmi:id="_wvMd4Cy8Ee2RXfJ-Z5pdBw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_wv7dsCy8Ee2RXfJ-Z5pdBw" base_Package="_raWgICy8Ee2RXfJ-Z5pdBw">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:Reference xmi:id="_yIhoUCy8Ee2RXfJ-Z5pdBw" base_Element="_yIZFcCy8Ee2RXfJ-Z5pdBw"/>
+  <UMLLabProfile:Reference xmi:id="_yIqyQCy8Ee2RXfJ-Z5pdBw" base_Element="_yImg0Cy8Ee2RXfJ-Z5pdBw"/>
+  <UMLLabProfile:Reference xmi:id="_yIvqwCy8Ee2RXfJ-Z5pdBw" base_Element="_yIrZUCy8Ee2RXfJ-Z5pdBw"/>
+  <UMLLabProfile:Reference xmi:id="_yJAJcCy8Ee2RXfJ-Z5pdBw" base_Element="_yI6C0Cy8Ee2RXfJ-Z5pdBw"/>
+  <UMLLabProfile:Reference xmi:id="_yJHeMCy8Ee2RXfJ-Z5pdBw" base_Element="_yJAwgCy8Ee2RXfJ-Z5pdBw"/>
+  <UMLLabProfile:Reference xmi:id="_yJOy8Cy8Ee2RXfJ-Z5pdBw" base_Element="_yJIFQCy8Ee2RXfJ-Z5pdBw"/>
+  <UMLLabProfile:Reference xmi:id="_yJVgoCy8Ee2RXfJ-Z5pdBw" base_Element="_yJPaACy8Ee2RXfJ-Z5pdBw"/>
+  <UMLLabProfile:Reference xmi:id="_yKhzcCy8Ee2RXfJ-Z5pdBw" base_Element="_yKaesCy8Ee2RXfJ-Z5pdBw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_yMCPUCy8Ee2RXfJ-Z5pdBw" base_Element="_yL_MACy8Ee2RXfJ-Z5pdBw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_yMF5sCy8Ee2RXfJ-Z5pdBw" base_Element="_yMDdcCy8Ee2RXfJ-Z5pdBw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_yMMAUCy8Ee2RXfJ-Z5pdBw" base_Element="_yMI9ACy8Ee2RXfJ-Z5pdBw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_yMQRwCy8Ee2RXfJ-Z5pdBw" base_Element="_yMMnYCy8Ee2RXfJ-Z5pdBw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_yMfiUCy8Ee2RXfJ-Z5pdBw" base_Element="_yMcfACy8Ee2RXfJ-Z5pdBw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_yMjzwCy8Ee2RXfJ-Z5pdBw" base_Element="_yMgJYCy8Ee2RXfJ-Z5pdBw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_yM-DcCy8Ee2RXfJ-Z5pdBw" base_Element="_yM7AICy8Ee2RXfJ-Z5pdBw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_yNBt0Cy8Ee2RXfJ-Z5pdBw" base_Element="_yM-qgCy8Ee2RXfJ-Z5pdBw"/>
+  <UMLLabProfile:Reference xmi:id="_yOlNACy8Ee2RXfJ-Z5pdBw" base_Element="_yOcDECy8Ee2RXfJ-Z5pdBw"/>
+  <UMLLabProfile:Reference xmi:id="_yOxaQCy8Ee2RXfJ-Z5pdBw" base_Element="_yOl0ECy8Ee2RXfJ-Z5pdBw"/>
+  <UMLLabProfile:Reference xmi:id="_yO4vACy8Ee2RXfJ-Z5pdBw" base_Element="_yOyBUCy8Ee2RXfJ-Z5pdBw"/>
+  <UMLLabProfile:Reference xmi:id="_yPAq0Cy8Ee2RXfJ-Z5pdBw" base_Element="_yO5WECy8Ee2RXfJ-Z5pdBw"/>
+  <UMLLabProfile:Reference xmi:id="_yPHYgCy8Ee2RXfJ-Z5pdBw" base_Element="_yPBR4Cy8Ee2RXfJ-Z5pdBw"/>
+  <UMLLabProfile:Reference xmi:id="_yPPUUCy8Ee2RXfJ-Z5pdBw" base_Element="_yPImoCy8Ee2RXfJ-Z5pdBw"/>
+  <UMLLabProfile:Reference xmi:id="_yPWCACy8Ee2RXfJ-Z5pdBw" base_Element="_yPPUUSy8Ee2RXfJ-Z5pdBw"/>
+  <UMLLabProfile:Reference xmi:id="_yP1xQCy8Ee2RXfJ-Z5pdBw" base_Element="_yPw4wCy8Ee2RXfJ-Z5pdBw"/>
+  <UMLLabProfile:UnresolvedElement xmi:id="_21cRICzBEe2RXfJ-Z5pdBw" base_Element="_21ab8CzBEe2RXfJ-Z5pdBw"/>
+</xmi:XMI>
