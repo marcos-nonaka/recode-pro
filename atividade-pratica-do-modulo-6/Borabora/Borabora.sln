@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Borabora", "Borabora\Borabora.csproj", "{760724A3-334B-4CFE-BC65-BC4F7AAF92D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{760724A3-334B-4CFE-BC65-BC4F7AAF92D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{760724A3-334B-4CFE-BC65-BC4F7AAF92D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{760724A3-334B-4CFE-BC65-BC4F7AAF92D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{760724A3-334B-4CFE-BC65-BC4F7AAF92D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA19C373-BFFA-4E0F-9BEB-C56FFB6CAE36}
+	EndGlobalSection
+EndGlobal
